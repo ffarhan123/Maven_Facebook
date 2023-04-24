@@ -69,7 +69,7 @@ public class VerifySignUpPage extends Base
 	public void verifySignUpButtonOnSignUpPage() throws InterruptedException
 	{
 		System.out.println("Test1_signUp");
-		signUpPage.sendFirstName("pedri");
+		signUpPage.sendFirstName("pedriGavi");
 		signUpPage.sendLastName("gonzalez");
 		signUpPage.sendMobileNumberOrEmail("9874562301");
 		signUpPage.sendNewPassword("Fhbgjk123@");
