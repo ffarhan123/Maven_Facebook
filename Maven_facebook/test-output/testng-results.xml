@@ -1,0 +1,2074 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="12" passed="0" failed="0" skipped="12">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-04-05T15:47:02 IST" name="Suite1234" finished-at="2023-04-05T15:47:59 IST" duration-ms="56846">
+    <groups>
+    </groups>
+    <test started-at="2023-04-05T15:47:02 IST" name="EdgeTest" finished-at="2023-04-05T15:47:40 IST" duration-ms="38305">
+      <class name="testNgpack.VerifyLoginButton">
+        <test-method is-config="true" signature="openBrowser(java.lang.String)[pri:0, instance:testNgpack.VerifyLoginButton@59fd97a8]" started-at="2023-04-05T15:47:24 IST" name="openBrowser" finished-at="2023-04-05T15:47:29 IST" duration-ms="5681" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openBrowser -->
+        <test-method is-config="true" signature="createPomObject()[pri:0, instance:testNgpack.VerifyLoginButton@59fd97a8]" started-at="2023-04-05T15:47:40 IST" name="createPomObject" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1680689860588" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createPomObject -->
+        <test-method is-config="true" signature="goToLoginPage()[pri:0, instance:testNgpack.VerifyLoginButton@59fd97a8]" started-at="2023-04-05T15:47:40 IST" name="goToLoginPage" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1680689860593" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- goToLoginPage -->
+        <test-method signature="clickOnLoginButton()[pri:0, instance:testNgpack.VerifyLoginButton@59fd97a8]" started-at="2023-04-05T15:47:40 IST" name="clickOnLoginButton" finished-at="2023-04-05T15:47:40 IST" duration-ms="0" status="SKIP">
+          <exception class="org.openqa.selenium.WebDriverException">
+            <message>
+              <![CDATA[disconnected: received Inspector.detached event
+  (failed to check if window was closed: disconnected: not connected to DevTools)
+  (Session info: MicrosoftEdge=111.0.1661.62)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-ADC0TJP', ip: '172.17.48.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
+Driver info: driver.version: EdgeDriver
+remote stacktrace: Backtrace:
+Microsoft::Applications::Events::EventProperties::SetProperty [0x00007FF6A59CA5C2+12658]
+Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF6A5962862+747634]
+(No symbol) [0x00007FF6A55FDD2E]
+(No symbol) [0x00007FF6A55EB70C]
+(No symbol) [0x00007FF6A55EAC38]
+(No symbol) [0x00007FF6A55E9DA4]
+(No symbol) [0x00007FF6A55E9CBC]
+(No symbol) [0x00007FF6A55E86D3]
+(No symbol) [0x00007FF6A55E8E36]
+(No symbol) [0x00007FF6A55E78E6]
+(No symbol) [0x00007FF6A55F55CD]
+(No symbol) [0x00007FF6A55E7692]
+(No symbol) [0x00007FF6A55E98D8]
+(No symbol) [0x00007FF6A55E86D3]
+(No symbol) [0x00007FF6A55E8E36]
+(No symbol) [0x00007FF6A55E78E6]
+(No symbol) [0x00007FF6A55F23D4]
+(No symbol) [0x00007FF6A55E7692]
+(No symbol) [0x00007FF6A55E98D8]
+(No symbol) [0x00007FF6A55E86D3]
+(No symbol) [0x00007FF6A55E8E36]
+(No symbol) [0x00007FF6A55E78E6]
+(No symbol) [0x00007FF6A55EF7B1]
+(No symbol) [0x00007FF6A55E7692]
+(No symbol) [0x00007FF6A55E98D8]
+(No symbol) [0x00007FF6A55E86D3]
+(No symbol) [0x00007FF6A55E8E36]
+(No symbol) [0x00007FF6A55E78E6]
+(No symbol) [0x00007FF6A55DE45A]
+(No symbol) [0x00007FF6A55E7692]
+(No symbol) [0x00007FF6A55E6AA1]
+(No symbol) [0x00007FF6A55E675F]
+(No symbol) [0x00007FF6A55FF44B]
+(No symbol) [0x00007FF6A55D6EA7]
+(No symbol) [0x00007FF6A55D5DF3]
+(No symbol) [0x00007FF6A5667316]
+(No symbol) [0x00007FF6A565F1C3]
+(No symbol) [0x00007FF6A56317D6]
+(No symbol) [0x00007FF6A56309B5]
+(No symbol) [0x00007FF6A5631F44]
+Microsoft::Applications::Events::EventProperties::SetProperty [0x00007FF6A5875530+147088]
+(No symbol) [0x00007FF6A57191A6]
+Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF6A58B4497+33959]
+Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF6A58B7F65+49013]
+Microsoft::Applications::Events::ILogManager::DispatchEventBroadcast [0x00007FF6A5BA9933+1305299]
+Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF6A596AE1C+781868]
+Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF6A5970344+803668]
+Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF6A597049C+804012]
+Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF6A59785A1+837041]
+BaseThreadInitThunk [0x00007FF995B07614+20]
+RtlUserThreadStart [0x00007FF996C826A1+33]
+]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.WebDriverException: disconnected: received Inspector.detached event
+  (failed to check if window was closed: disconnected: not connected to DevTools)
+  (Session info: MicrosoftEdge=111.0.1661.62)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-ADC0TJP', ip: '172.17.48.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
+Driver info: driver.version: EdgeDriver
+remote stacktrace: Backtrace:
+Microsoft::Applications::Events::EventProperties::SetProperty [0x00007FF6A59CA5C2+12658]
+Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF6A5962862+747634]
+(No symbol) [0x00007FF6A55FDD2E]
+(No symbol) [0x00007FF6A55EB70C]
+(No symbol) [0x00007FF6A55EAC38]
+(No symbol) [0x00007FF6A55E9DA4]
+(No symbol) [0x00007FF6A55E9CBC]
+(No symbol) [0x00007FF6A55E86D3]
+(No symbol) [0x00007FF6A55E8E36]
+(No symbol) [0x00007FF6A55E78E6]
+(No symbol) [0x00007FF6A55F55CD]
+(No symbol) [0x00007FF6A55E7692]
+(No symbol) [0x00007FF6A55E98D8]
+(No symbol) [0x00007FF6A55E86D3]
+(No symbol) [0x00007FF6A55E8E36]
+(No symbol) [0x00007FF6A55E78E6]
+(No symbol) [0x00007FF6A55F23D4]
+(No symbol) [0x00007FF6A55E7692]
+(No symbol) [0x00007FF6A55E98D8]
+(No symbol) [0x00007FF6A55E86D3]
+(No symbol) [0x00007FF6A55E8E36]
+(No symbol) [0x00007FF6A55E78E6]
+(No symbol) [0x00007FF6A55EF7B1]
+(No symbol) [0x00007FF6A55E7692]
+(No symbol) [0x00007FF6A55E98D8]
+(No symbol) [0x00007FF6A55E86D3]
+(No symbol) [0x00007FF6A55E8E36]
+(No symbol) [0x00007FF6A55E78E6]
+(No symbol) [0x00007FF6A55DE45A]
+(No symbol) [0x00007FF6A55E7692]
+(No symbol) [0x00007FF6A55E6AA1]
+(No symbol) [0x00007FF6A55E675F]
+(No symbol) [0x00007FF6A55FF44B]
+(No symbol) [0x00007FF6A55D6EA7]
+(No symbol) [0x00007FF6A55D5DF3]
+(No symbol) [0x00007FF6A5667316]
+(No symbol) [0x00007FF6A565F1C3]
+(No symbol) [0x00007FF6A56317D6]
+(No symbol) [0x00007FF6A56309B5]
+(No symbol) [0x00007FF6A5631F44]
+Microsoft::Applications::Events::EventProperties::SetProperty [0x00007FF6A5875530+147088]
+(No symbol) [0x00007FF6A57191A6]
+Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF6A58B4497+33959]
+Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF6A58B7F65+49013]
+Microsoft::Applications::Events::ILogManager::DispatchEventBroadcast [0x00007FF6A5BA9933+1305299]
+Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF6A596AE1C+781868]
+Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF6A5970344+803668]
+Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF6A597049C+804012]
+Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF6A59785A1+837041]
+BaseThreadInitThunk [0x00007FF995B07614+20]
+RtlUserThreadStart [0x00007FF996C826A1+33]
+
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
+at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
+at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
+at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+at java.base/java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:1002)
+at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:129)
+at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:527)
+at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:513)
+at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)
+at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+at java.base/java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:647)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:131)
+at org.openqa.selenium.edge.EdgeDriver.<init>(EdgeDriver.java:141)
+at org.openqa.selenium.edge.EdgeDriver.<init>(EdgeDriver.java:96)
+at browserSetup.Base.openEdgeBrowser(Base.java:19)
+at testNgpack.VerifySignUpPage.openBrowser(VerifySignUpPage.java:43)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:637)
+at org.testng.TestRunner.beforeRun(TestRunner.java:627)
+at org.testng.TestRunner.run(TestRunner.java:589)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickOnLoginButton -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:testNgpack.VerifyLoginButton@59fd97a8]" started-at="2023-04-05T15:47:40 IST" name="afterMethod" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1680689860655" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="goToLoginPage()[pri:0, instance:testNgpack.VerifyLoginButton@59fd97a8]" started-at="2023-04-05T15:47:40 IST" name="goToLoginPage" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1680689860749" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- goToLoginPage -->
+        <test-method signature="verifyNullEmailPasswordLoginPage()[pri:0, instance:testNgpack.VerifyLoginButton@59fd97a8]" started-at="2023-04-05T15:47:40 IST" name="verifyNullEmailPasswordLoginPage" finished-at="2023-04-05T15:47:40 IST" duration-ms="0" status="SKIP">
+          <exception class="org.openqa.selenium.WebDriverException">
+            <message>
+              <![CDATA[disconnected: received Inspector.detached event
+  (failed to check if window was closed: disconnected: not connected to DevTools)
+  (Session info: MicrosoftEdge=111.0.1661.62)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-ADC0TJP', ip: '172.17.48.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
+Driver info: driver.version: EdgeDriver
+remote stacktrace: Backtrace:
+Microsoft::Applications::Events::EventProperties::SetProperty [0x00007FF6A59CA5C2+12658]
+Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF6A5962862+747634]
+(No symbol) [0x00007FF6A55FDD2E]
+(No symbol) [0x00007FF6A55EB70C]
+(No symbol) [0x00007FF6A55EAC38]
+(No symbol) [0x00007FF6A55E9DA4]
+(No symbol) [0x00007FF6A55E9CBC]
+(No symbol) [0x00007FF6A55E86D3]
+(No symbol) [0x00007FF6A55E8E36]
+(No symbol) [0x00007FF6A55E78E6]
+(No symbol) [0x00007FF6A55F55CD]
+(No symbol) [0x00007FF6A55E7692]
+(No symbol) [0x00007FF6A55E98D8]
+(No symbol) [0x00007FF6A55E86D3]
+(No symbol) [0x00007FF6A55E8E36]
+(No symbol) [0x00007FF6A55E78E6]
+(No symbol) [0x00007FF6A55F23D4]
+(No symbol) [0x00007FF6A55E7692]
+(No symbol) [0x00007FF6A55E98D8]
+(No symbol) [0x00007FF6A55E86D3]
+(No symbol) [0x00007FF6A55E8E36]
+(No symbol) [0x00007FF6A55E78E6]
+(No symbol) [0x00007FF6A55EF7B1]
+(No symbol) [0x00007FF6A55E7692]
+(No symbol) [0x00007FF6A55E98D8]
+(No symbol) [0x00007FF6A55E86D3]
+(No symbol) [0x00007FF6A55E8E36]
+(No symbol) [0x00007FF6A55E78E6]
+(No symbol) [0x00007FF6A55DE45A]
+(No symbol) [0x00007FF6A55E7692]
+(No symbol) [0x00007FF6A55E6AA1]
+(No symbol) [0x00007FF6A55E675F]
+(No symbol) [0x00007FF6A55FF44B]
+(No symbol) [0x00007FF6A55D6EA7]
+(No symbol) [0x00007FF6A55D5DF3]
+(No symbol) [0x00007FF6A5667316]
+(No symbol) [0x00007FF6A565F1C3]
+(No symbol) [0x00007FF6A56317D6]
+(No symbol) [0x00007FF6A56309B5]
+(No symbol) [0x00007FF6A5631F44]
+Microsoft::Applications::Events::EventProperties::SetProperty [0x00007FF6A5875530+147088]
+(No symbol) [0x00007FF6A57191A6]
+Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF6A58B4497+33959]
+Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF6A58B7F65+49013]
+Microsoft::Applications::Events::ILogManager::DispatchEventBroadcast [0x00007FF6A5BA9933+1305299]
+Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF6A596AE1C+781868]
+Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF6A5970344+803668]
+Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF6A597049C+804012]
+Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF6A59785A1+837041]
+BaseThreadInitThunk [0x00007FF995B07614+20]
+RtlUserThreadStart [0x00007FF996C826A1+33]
+]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.WebDriverException: disconnected: received Inspector.detached event
+  (failed to check if window was closed: disconnected: not connected to DevTools)
+  (Session info: MicrosoftEdge=111.0.1661.62)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-ADC0TJP', ip: '172.17.48.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
+Driver info: driver.version: EdgeDriver
+remote stacktrace: Backtrace:
+Microsoft::Applications::Events::EventProperties::SetProperty [0x00007FF6A59CA5C2+12658]
+Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF6A5962862+747634]
+(No symbol) [0x00007FF6A55FDD2E]
+(No symbol) [0x00007FF6A55EB70C]
+(No symbol) [0x00007FF6A55EAC38]
+(No symbol) [0x00007FF6A55E9DA4]
+(No symbol) [0x00007FF6A55E9CBC]
+(No symbol) [0x00007FF6A55E86D3]
+(No symbol) [0x00007FF6A55E8E36]
+(No symbol) [0x00007FF6A55E78E6]
+(No symbol) [0x00007FF6A55F55CD]
+(No symbol) [0x00007FF6A55E7692]
+(No symbol) [0x00007FF6A55E98D8]
+(No symbol) [0x00007FF6A55E86D3]
+(No symbol) [0x00007FF6A55E8E36]
+(No symbol) [0x00007FF6A55E78E6]
+(No symbol) [0x00007FF6A55F23D4]
+(No symbol) [0x00007FF6A55E7692]
+(No symbol) [0x00007FF6A55E98D8]
+(No symbol) [0x00007FF6A55E86D3]
+(No symbol) [0x00007FF6A55E8E36]
+(No symbol) [0x00007FF6A55E78E6]
+(No symbol) [0x00007FF6A55EF7B1]
+(No symbol) [0x00007FF6A55E7692]
+(No symbol) [0x00007FF6A55E98D8]
+(No symbol) [0x00007FF6A55E86D3]
+(No symbol) [0x00007FF6A55E8E36]
+(No symbol) [0x00007FF6A55E78E6]
+(No symbol) [0x00007FF6A55DE45A]
+(No symbol) [0x00007FF6A55E7692]
+(No symbol) [0x00007FF6A55E6AA1]
+(No symbol) [0x00007FF6A55E675F]
+(No symbol) [0x00007FF6A55FF44B]
+(No symbol) [0x00007FF6A55D6EA7]
+(No symbol) [0x00007FF6A55D5DF3]
+(No symbol) [0x00007FF6A5667316]
+(No symbol) [0x00007FF6A565F1C3]
+(No symbol) [0x00007FF6A56317D6]
+(No symbol) [0x00007FF6A56309B5]
+(No symbol) [0x00007FF6A5631F44]
+Microsoft::Applications::Events::EventProperties::SetProperty [0x00007FF6A5875530+147088]
+(No symbol) [0x00007FF6A57191A6]
+Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF6A58B4497+33959]
+Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF6A58B7F65+49013]
+Microsoft::Applications::Events::ILogManager::DispatchEventBroadcast [0x00007FF6A5BA9933+1305299]
+Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF6A596AE1C+781868]
+Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF6A5970344+803668]
+Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF6A597049C+804012]
+Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF6A59785A1+837041]
+BaseThreadInitThunk [0x00007FF995B07614+20]
+RtlUserThreadStart [0x00007FF996C826A1+33]
+
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
+at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
+at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
+at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+at java.base/java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:1002)
+at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:129)
+at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:527)
+at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:513)
+at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)
+at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+at java.base/java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:647)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:131)
+at org.openqa.selenium.edge.EdgeDriver.<init>(EdgeDriver.java:141)
+at org.openqa.selenium.edge.EdgeDriver.<init>(EdgeDriver.java:96)
+at browserSetup.Base.openEdgeBrowser(Base.java:19)
+at testNgpack.VerifySignUpPage.openBrowser(VerifySignUpPage.java:43)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:637)
+at org.testng.TestRunner.beforeRun(TestRunner.java:627)
+at org.testng.TestRunner.run(TestRunner.java:589)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyNullEmailPasswordLoginPage -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:testNgpack.VerifyLoginButton@59fd97a8]" started-at="2023-04-05T15:47:40 IST" name="afterMethod" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1680689860829" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="clearObjects()[pri:0, instance:testNgpack.VerifyLoginButton@59fd97a8]" started-at="2023-04-05T15:47:40 IST" name="clearObjects" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1680689860840" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clearObjects -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:testNgpack.VerifyLoginButton@59fd97a8]" started-at="2023-04-05T15:47:40 IST" name="closeBrowser" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1680689860943" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- testNgpack.VerifyLoginButton -->
+      <class name="testNgpack.VerifySignUpPage">
+        <test-method is-config="true" signature="openBrowser(java.lang.String)[pri:0, instance:testNgpack.VerifySignUpPage@123ef382]" started-at="2023-04-05T15:47:29 IST" name="openBrowser" finished-at="2023-04-05T15:47:40 IST" duration-ms="10597" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Edge]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.WebDriverException">
+            <message>
+              <![CDATA[disconnected: received Inspector.detached event
+  (failed to check if window was closed: disconnected: not connected to DevTools)
+  (Session info: MicrosoftEdge=111.0.1661.62)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-ADC0TJP', ip: '172.17.48.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
+Driver info: driver.version: EdgeDriver
+remote stacktrace: Backtrace:
+Microsoft::Applications::Events::EventProperties::SetProperty [0x00007FF6A59CA5C2+12658]
+Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF6A5962862+747634]
+(No symbol) [0x00007FF6A55FDD2E]
+(No symbol) [0x00007FF6A55EB70C]
+(No symbol) [0x00007FF6A55EAC38]
+(No symbol) [0x00007FF6A55E9DA4]
+(No symbol) [0x00007FF6A55E9CBC]
+(No symbol) [0x00007FF6A55E86D3]
+(No symbol) [0x00007FF6A55E8E36]
+(No symbol) [0x00007FF6A55E78E6]
+(No symbol) [0x00007FF6A55F55CD]
+(No symbol) [0x00007FF6A55E7692]
+(No symbol) [0x00007FF6A55E98D8]
+(No symbol) [0x00007FF6A55E86D3]
+(No symbol) [0x00007FF6A55E8E36]
+(No symbol) [0x00007FF6A55E78E6]
+(No symbol) [0x00007FF6A55F23D4]
+(No symbol) [0x00007FF6A55E7692]
+(No symbol) [0x00007FF6A55E98D8]
+(No symbol) [0x00007FF6A55E86D3]
+(No symbol) [0x00007FF6A55E8E36]
+(No symbol) [0x00007FF6A55E78E6]
+(No symbol) [0x00007FF6A55EF7B1]
+(No symbol) [0x00007FF6A55E7692]
+(No symbol) [0x00007FF6A55E98D8]
+(No symbol) [0x00007FF6A55E86D3]
+(No symbol) [0x00007FF6A55E8E36]
+(No symbol) [0x00007FF6A55E78E6]
+(No symbol) [0x00007FF6A55DE45A]
+(No symbol) [0x00007FF6A55E7692]
+(No symbol) [0x00007FF6A55E6AA1]
+(No symbol) [0x00007FF6A55E675F]
+(No symbol) [0x00007FF6A55FF44B]
+(No symbol) [0x00007FF6A55D6EA7]
+(No symbol) [0x00007FF6A55D5DF3]
+(No symbol) [0x00007FF6A5667316]
+(No symbol) [0x00007FF6A565F1C3]
+(No symbol) [0x00007FF6A56317D6]
+(No symbol) [0x00007FF6A56309B5]
+(No symbol) [0x00007FF6A5631F44]
+Microsoft::Applications::Events::EventProperties::SetProperty [0x00007FF6A5875530+147088]
+(No symbol) [0x00007FF6A57191A6]
+Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF6A58B4497+33959]
+Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF6A58B7F65+49013]
+Microsoft::Applications::Events::ILogManager::DispatchEventBroadcast [0x00007FF6A5BA9933+1305299]
+Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF6A596AE1C+781868]
+Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF6A5970344+803668]
+Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF6A597049C+804012]
+Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF6A59785A1+837041]
+BaseThreadInitThunk [0x00007FF995B07614+20]
+RtlUserThreadStart [0x00007FF996C826A1+33]
+]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.WebDriverException: disconnected: received Inspector.detached event
+  (failed to check if window was closed: disconnected: not connected to DevTools)
+  (Session info: MicrosoftEdge=111.0.1661.62)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-ADC0TJP', ip: '172.17.48.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
+Driver info: driver.version: EdgeDriver
+remote stacktrace: Backtrace:
+Microsoft::Applications::Events::EventProperties::SetProperty [0x00007FF6A59CA5C2+12658]
+Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF6A5962862+747634]
+(No symbol) [0x00007FF6A55FDD2E]
+(No symbol) [0x00007FF6A55EB70C]
+(No symbol) [0x00007FF6A55EAC38]
+(No symbol) [0x00007FF6A55E9DA4]
+(No symbol) [0x00007FF6A55E9CBC]
+(No symbol) [0x00007FF6A55E86D3]
+(No symbol) [0x00007FF6A55E8E36]
+(No symbol) [0x00007FF6A55E78E6]
+(No symbol) [0x00007FF6A55F55CD]
+(No symbol) [0x00007FF6A55E7692]
+(No symbol) [0x00007FF6A55E98D8]
+(No symbol) [0x00007FF6A55E86D3]
+(No symbol) [0x00007FF6A55E8E36]
+(No symbol) [0x00007FF6A55E78E6]
+(No symbol) [0x00007FF6A55F23D4]
+(No symbol) [0x00007FF6A55E7692]
+(No symbol) [0x00007FF6A55E98D8]
+(No symbol) [0x00007FF6A55E86D3]
+(No symbol) [0x00007FF6A55E8E36]
+(No symbol) [0x00007FF6A55E78E6]
+(No symbol) [0x00007FF6A55EF7B1]
+(No symbol) [0x00007FF6A55E7692]
+(No symbol) [0x00007FF6A55E98D8]
+(No symbol) [0x00007FF6A55E86D3]
+(No symbol) [0x00007FF6A55E8E36]
+(No symbol) [0x00007FF6A55E78E6]
+(No symbol) [0x00007FF6A55DE45A]
+(No symbol) [0x00007FF6A55E7692]
+(No symbol) [0x00007FF6A55E6AA1]
+(No symbol) [0x00007FF6A55E675F]
+(No symbol) [0x00007FF6A55FF44B]
+(No symbol) [0x00007FF6A55D6EA7]
+(No symbol) [0x00007FF6A55D5DF3]
+(No symbol) [0x00007FF6A5667316]
+(No symbol) [0x00007FF6A565F1C3]
+(No symbol) [0x00007FF6A56317D6]
+(No symbol) [0x00007FF6A56309B5]
+(No symbol) [0x00007FF6A5631F44]
+Microsoft::Applications::Events::EventProperties::SetProperty [0x00007FF6A5875530+147088]
+(No symbol) [0x00007FF6A57191A6]
+Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF6A58B4497+33959]
+Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF6A58B7F65+49013]
+Microsoft::Applications::Events::ILogManager::DispatchEventBroadcast [0x00007FF6A5BA9933+1305299]
+Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF6A596AE1C+781868]
+Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF6A5970344+803668]
+Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF6A597049C+804012]
+Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF6A59785A1+837041]
+BaseThreadInitThunk [0x00007FF995B07614+20]
+RtlUserThreadStart [0x00007FF996C826A1+33]
+
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
+at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
+at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
+at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+at java.base/java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:1002)
+at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:129)
+at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:527)
+at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:513)
+at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)
+at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+at java.base/java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:647)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:131)
+at org.openqa.selenium.edge.EdgeDriver.<init>(EdgeDriver.java:141)
+at org.openqa.selenium.edge.EdgeDriver.<init>(EdgeDriver.java:96)
+at browserSetup.Base.openEdgeBrowser(Base.java:19)
+at testNgpack.VerifySignUpPage.openBrowser(VerifySignUpPage.java:43)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:637)
+at org.testng.TestRunner.beforeRun(TestRunner.java:627)
+at org.testng.TestRunner.run(TestRunner.java:589)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openBrowser -->
+        <test-method is-config="true" signature="createPomObject()[pri:0, instance:testNgpack.VerifySignUpPage@123ef382]" started-at="2023-04-05T15:47:40 IST" name="createPomObject" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1680689860594" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createPomObject -->
+        <test-method is-config="true" signature="goToSignUpPage()[pri:0, instance:testNgpack.VerifySignUpPage@123ef382]" started-at="2023-04-05T15:47:40 IST" name="goToSignUpPage" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1680689860679" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- goToSignUpPage -->
+        <test-method signature="verifySignUpButtonOnSignUpPage()[pri:0, instance:testNgpack.VerifySignUpPage@123ef382]" started-at="2023-04-05T15:47:40 IST" name="verifySignUpButtonOnSignUpPage" finished-at="2023-04-05T15:47:40 IST" duration-ms="0" status="SKIP">
+          <exception class="org.openqa.selenium.WebDriverException">
+            <message>
+              <![CDATA[disconnected: received Inspector.detached event
+  (failed to check if window was closed: disconnected: not connected to DevTools)
+  (Session info: MicrosoftEdge=111.0.1661.62)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-ADC0TJP', ip: '172.17.48.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
+Driver info: driver.version: EdgeDriver
+remote stacktrace: Backtrace:
+Microsoft::Applications::Events::EventProperties::SetProperty [0x00007FF6A59CA5C2+12658]
+Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF6A5962862+747634]
+(No symbol) [0x00007FF6A55FDD2E]
+(No symbol) [0x00007FF6A55EB70C]
+(No symbol) [0x00007FF6A55EAC38]
+(No symbol) [0x00007FF6A55E9DA4]
+(No symbol) [0x00007FF6A55E9CBC]
+(No symbol) [0x00007FF6A55E86D3]
+(No symbol) [0x00007FF6A55E8E36]
+(No symbol) [0x00007FF6A55E78E6]
+(No symbol) [0x00007FF6A55F55CD]
+(No symbol) [0x00007FF6A55E7692]
+(No symbol) [0x00007FF6A55E98D8]
+(No symbol) [0x00007FF6A55E86D3]
+(No symbol) [0x00007FF6A55E8E36]
+(No symbol) [0x00007FF6A55E78E6]
+(No symbol) [0x00007FF6A55F23D4]
+(No symbol) [0x00007FF6A55E7692]
+(No symbol) [0x00007FF6A55E98D8]
+(No symbol) [0x00007FF6A55E86D3]
+(No symbol) [0x00007FF6A55E8E36]
+(No symbol) [0x00007FF6A55E78E6]
+(No symbol) [0x00007FF6A55EF7B1]
+(No symbol) [0x00007FF6A55E7692]
+(No symbol) [0x00007FF6A55E98D8]
+(No symbol) [0x00007FF6A55E86D3]
+(No symbol) [0x00007FF6A55E8E36]
+(No symbol) [0x00007FF6A55E78E6]
+(No symbol) [0x00007FF6A55DE45A]
+(No symbol) [0x00007FF6A55E7692]
+(No symbol) [0x00007FF6A55E6AA1]
+(No symbol) [0x00007FF6A55E675F]
+(No symbol) [0x00007FF6A55FF44B]
+(No symbol) [0x00007FF6A55D6EA7]
+(No symbol) [0x00007FF6A55D5DF3]
+(No symbol) [0x00007FF6A5667316]
+(No symbol) [0x00007FF6A565F1C3]
+(No symbol) [0x00007FF6A56317D6]
+(No symbol) [0x00007FF6A56309B5]
+(No symbol) [0x00007FF6A5631F44]
+Microsoft::Applications::Events::EventProperties::SetProperty [0x00007FF6A5875530+147088]
+(No symbol) [0x00007FF6A57191A6]
+Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF6A58B4497+33959]
+Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF6A58B7F65+49013]
+Microsoft::Applications::Events::ILogManager::DispatchEventBroadcast [0x00007FF6A5BA9933+1305299]
+Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF6A596AE1C+781868]
+Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF6A5970344+803668]
+Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF6A597049C+804012]
+Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF6A59785A1+837041]
+BaseThreadInitThunk [0x00007FF995B07614+20]
+RtlUserThreadStart [0x00007FF996C826A1+33]
+]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.WebDriverException: disconnected: received Inspector.detached event
+  (failed to check if window was closed: disconnected: not connected to DevTools)
+  (Session info: MicrosoftEdge=111.0.1661.62)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-ADC0TJP', ip: '172.17.48.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
+Driver info: driver.version: EdgeDriver
+remote stacktrace: Backtrace:
+Microsoft::Applications::Events::EventProperties::SetProperty [0x00007FF6A59CA5C2+12658]
+Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF6A5962862+747634]
+(No symbol) [0x00007FF6A55FDD2E]
+(No symbol) [0x00007FF6A55EB70C]
+(No symbol) [0x00007FF6A55EAC38]
+(No symbol) [0x00007FF6A55E9DA4]
+(No symbol) [0x00007FF6A55E9CBC]
+(No symbol) [0x00007FF6A55E86D3]
+(No symbol) [0x00007FF6A55E8E36]
+(No symbol) [0x00007FF6A55E78E6]
+(No symbol) [0x00007FF6A55F55CD]
+(No symbol) [0x00007FF6A55E7692]
+(No symbol) [0x00007FF6A55E98D8]
+(No symbol) [0x00007FF6A55E86D3]
+(No symbol) [0x00007FF6A55E8E36]
+(No symbol) [0x00007FF6A55E78E6]
+(No symbol) [0x00007FF6A55F23D4]
+(No symbol) [0x00007FF6A55E7692]
+(No symbol) [0x00007FF6A55E98D8]
+(No symbol) [0x00007FF6A55E86D3]
+(No symbol) [0x00007FF6A55E8E36]
+(No symbol) [0x00007FF6A55E78E6]
+(No symbol) [0x00007FF6A55EF7B1]
+(No symbol) [0x00007FF6A55E7692]
+(No symbol) [0x00007FF6A55E98D8]
+(No symbol) [0x00007FF6A55E86D3]
+(No symbol) [0x00007FF6A55E8E36]
+(No symbol) [0x00007FF6A55E78E6]
+(No symbol) [0x00007FF6A55DE45A]
+(No symbol) [0x00007FF6A55E7692]
+(No symbol) [0x00007FF6A55E6AA1]
+(No symbol) [0x00007FF6A55E675F]
+(No symbol) [0x00007FF6A55FF44B]
+(No symbol) [0x00007FF6A55D6EA7]
+(No symbol) [0x00007FF6A55D5DF3]
+(No symbol) [0x00007FF6A5667316]
+(No symbol) [0x00007FF6A565F1C3]
+(No symbol) [0x00007FF6A56317D6]
+(No symbol) [0x00007FF6A56309B5]
+(No symbol) [0x00007FF6A5631F44]
+Microsoft::Applications::Events::EventProperties::SetProperty [0x00007FF6A5875530+147088]
+(No symbol) [0x00007FF6A57191A6]
+Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF6A58B4497+33959]
+Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF6A58B7F65+49013]
+Microsoft::Applications::Events::ILogManager::DispatchEventBroadcast [0x00007FF6A5BA9933+1305299]
+Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF6A596AE1C+781868]
+Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF6A5970344+803668]
+Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF6A597049C+804012]
+Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF6A59785A1+837041]
+BaseThreadInitThunk [0x00007FF995B07614+20]
+RtlUserThreadStart [0x00007FF996C826A1+33]
+
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
+at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
+at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
+at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+at java.base/java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:1002)
+at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:129)
+at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:527)
+at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:513)
+at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)
+at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+at java.base/java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:647)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:131)
+at org.openqa.selenium.edge.EdgeDriver.<init>(EdgeDriver.java:141)
+at org.openqa.selenium.edge.EdgeDriver.<init>(EdgeDriver.java:96)
+at browserSetup.Base.openEdgeBrowser(Base.java:19)
+at testNgpack.VerifySignUpPage.openBrowser(VerifySignUpPage.java:43)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:637)
+at org.testng.TestRunner.beforeRun(TestRunner.java:627)
+at org.testng.TestRunner.run(TestRunner.java:589)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySignUpButtonOnSignUpPage -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:testNgpack.VerifySignUpPage@123ef382]" started-at="2023-04-05T15:47:40 IST" name="afterMethod" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1680689860706" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="clearObjects()[pri:0, instance:testNgpack.VerifySignUpPage@123ef382]" started-at="2023-04-05T15:47:40 IST" name="clearObjects" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1680689860802" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clearObjects -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:testNgpack.VerifySignUpPage@123ef382]" started-at="2023-04-05T15:47:40 IST" name="closeBrowser" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1680689860946" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- testNgpack.VerifySignUpPage -->
+      <class name="testNgpack.VerifyForgotPasswordPage">
+        <test-method is-config="true" signature="openBrowser(java.lang.String)[pri:0, instance:testNgpack.VerifyForgotPasswordPage@f5ac9e4]" started-at="2023-04-05T15:47:02 IST" name="openBrowser" finished-at="2023-04-05T15:47:24 IST" duration-ms="21578" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openBrowser -->
+        <test-method is-config="true" signature="createPomObject()[pri:0, instance:testNgpack.VerifyForgotPasswordPage@f5ac9e4]" started-at="2023-04-05T15:47:40 IST" name="createPomObject" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1680689860591" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createPomObject -->
+        <test-method is-config="true" signature="goToForgotPasswordPage()[pri:0, instance:testNgpack.VerifyForgotPasswordPage@f5ac9e4]" started-at="2023-04-05T15:47:40 IST" name="goToForgotPasswordPage" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1680689860682" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- goToForgotPasswordPage -->
+        <test-method signature="verifyCancelButtonOfForgotPasswordPage()[pri:0, instance:testNgpack.VerifyForgotPasswordPage@f5ac9e4]" started-at="2023-04-05T15:47:40 IST" name="verifyCancelButtonOfForgotPasswordPage" finished-at="2023-04-05T15:47:40 IST" duration-ms="0" status="SKIP">
+          <exception class="org.openqa.selenium.WebDriverException">
+            <message>
+              <![CDATA[disconnected: received Inspector.detached event
+  (failed to check if window was closed: disconnected: not connected to DevTools)
+  (Session info: MicrosoftEdge=111.0.1661.62)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-ADC0TJP', ip: '172.17.48.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
+Driver info: driver.version: EdgeDriver
+remote stacktrace: Backtrace:
+Microsoft::Applications::Events::EventProperties::SetProperty [0x00007FF6A59CA5C2+12658]
+Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF6A5962862+747634]
+(No symbol) [0x00007FF6A55FDD2E]
+(No symbol) [0x00007FF6A55EB70C]
+(No symbol) [0x00007FF6A55EAC38]
+(No symbol) [0x00007FF6A55E9DA4]
+(No symbol) [0x00007FF6A55E9CBC]
+(No symbol) [0x00007FF6A55E86D3]
+(No symbol) [0x00007FF6A55E8E36]
+(No symbol) [0x00007FF6A55E78E6]
+(No symbol) [0x00007FF6A55F55CD]
+(No symbol) [0x00007FF6A55E7692]
+(No symbol) [0x00007FF6A55E98D8]
+(No symbol) [0x00007FF6A55E86D3]
+(No symbol) [0x00007FF6A55E8E36]
+(No symbol) [0x00007FF6A55E78E6]
+(No symbol) [0x00007FF6A55F23D4]
+(No symbol) [0x00007FF6A55E7692]
+(No symbol) [0x00007FF6A55E98D8]
+(No symbol) [0x00007FF6A55E86D3]
+(No symbol) [0x00007FF6A55E8E36]
+(No symbol) [0x00007FF6A55E78E6]
+(No symbol) [0x00007FF6A55EF7B1]
+(No symbol) [0x00007FF6A55E7692]
+(No symbol) [0x00007FF6A55E98D8]
+(No symbol) [0x00007FF6A55E86D3]
+(No symbol) [0x00007FF6A55E8E36]
+(No symbol) [0x00007FF6A55E78E6]
+(No symbol) [0x00007FF6A55DE45A]
+(No symbol) [0x00007FF6A55E7692]
+(No symbol) [0x00007FF6A55E6AA1]
+(No symbol) [0x00007FF6A55E675F]
+(No symbol) [0x00007FF6A55FF44B]
+(No symbol) [0x00007FF6A55D6EA7]
+(No symbol) [0x00007FF6A55D5DF3]
+(No symbol) [0x00007FF6A5667316]
+(No symbol) [0x00007FF6A565F1C3]
+(No symbol) [0x00007FF6A56317D6]
+(No symbol) [0x00007FF6A56309B5]
+(No symbol) [0x00007FF6A5631F44]
+Microsoft::Applications::Events::EventProperties::SetProperty [0x00007FF6A5875530+147088]
+(No symbol) [0x00007FF6A57191A6]
+Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF6A58B4497+33959]
+Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF6A58B7F65+49013]
+Microsoft::Applications::Events::ILogManager::DispatchEventBroadcast [0x00007FF6A5BA9933+1305299]
+Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF6A596AE1C+781868]
+Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF6A5970344+803668]
+Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF6A597049C+804012]
+Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF6A59785A1+837041]
+BaseThreadInitThunk [0x00007FF995B07614+20]
+RtlUserThreadStart [0x00007FF996C826A1+33]
+]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.WebDriverException: disconnected: received Inspector.detached event
+  (failed to check if window was closed: disconnected: not connected to DevTools)
+  (Session info: MicrosoftEdge=111.0.1661.62)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-ADC0TJP', ip: '172.17.48.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
+Driver info: driver.version: EdgeDriver
+remote stacktrace: Backtrace:
+Microsoft::Applications::Events::EventProperties::SetProperty [0x00007FF6A59CA5C2+12658]
+Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF6A5962862+747634]
+(No symbol) [0x00007FF6A55FDD2E]
+(No symbol) [0x00007FF6A55EB70C]
+(No symbol) [0x00007FF6A55EAC38]
+(No symbol) [0x00007FF6A55E9DA4]
+(No symbol) [0x00007FF6A55E9CBC]
+(No symbol) [0x00007FF6A55E86D3]
+(No symbol) [0x00007FF6A55E8E36]
+(No symbol) [0x00007FF6A55E78E6]
+(No symbol) [0x00007FF6A55F55CD]
+(No symbol) [0x00007FF6A55E7692]
+(No symbol) [0x00007FF6A55E98D8]
+(No symbol) [0x00007FF6A55E86D3]
+(No symbol) [0x00007FF6A55E8E36]
+(No symbol) [0x00007FF6A55E78E6]
+(No symbol) [0x00007FF6A55F23D4]
+(No symbol) [0x00007FF6A55E7692]
+(No symbol) [0x00007FF6A55E98D8]
+(No symbol) [0x00007FF6A55E86D3]
+(No symbol) [0x00007FF6A55E8E36]
+(No symbol) [0x00007FF6A55E78E6]
+(No symbol) [0x00007FF6A55EF7B1]
+(No symbol) [0x00007FF6A55E7692]
+(No symbol) [0x00007FF6A55E98D8]
+(No symbol) [0x00007FF6A55E86D3]
+(No symbol) [0x00007FF6A55E8E36]
+(No symbol) [0x00007FF6A55E78E6]
+(No symbol) [0x00007FF6A55DE45A]
+(No symbol) [0x00007FF6A55E7692]
+(No symbol) [0x00007FF6A55E6AA1]
+(No symbol) [0x00007FF6A55E675F]
+(No symbol) [0x00007FF6A55FF44B]
+(No symbol) [0x00007FF6A55D6EA7]
+(No symbol) [0x00007FF6A55D5DF3]
+(No symbol) [0x00007FF6A5667316]
+(No symbol) [0x00007FF6A565F1C3]
+(No symbol) [0x00007FF6A56317D6]
+(No symbol) [0x00007FF6A56309B5]
+(No symbol) [0x00007FF6A5631F44]
+Microsoft::Applications::Events::EventProperties::SetProperty [0x00007FF6A5875530+147088]
+(No symbol) [0x00007FF6A57191A6]
+Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF6A58B4497+33959]
+Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF6A58B7F65+49013]
+Microsoft::Applications::Events::ILogManager::DispatchEventBroadcast [0x00007FF6A5BA9933+1305299]
+Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF6A596AE1C+781868]
+Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF6A5970344+803668]
+Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF6A597049C+804012]
+Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF6A59785A1+837041]
+BaseThreadInitThunk [0x00007FF995B07614+20]
+RtlUserThreadStart [0x00007FF996C826A1+33]
+
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
+at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
+at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
+at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+at java.base/java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:1002)
+at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:129)
+at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:527)
+at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:513)
+at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)
+at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+at java.base/java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:647)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:131)
+at org.openqa.selenium.edge.EdgeDriver.<init>(EdgeDriver.java:141)
+at org.openqa.selenium.edge.EdgeDriver.<init>(EdgeDriver.java:96)
+at browserSetup.Base.openEdgeBrowser(Base.java:19)
+at testNgpack.VerifySignUpPage.openBrowser(VerifySignUpPage.java:43)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:637)
+at org.testng.TestRunner.beforeRun(TestRunner.java:627)
+at org.testng.TestRunner.run(TestRunner.java:589)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyCancelButtonOfForgotPasswordPage -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:testNgpack.VerifyForgotPasswordPage@f5ac9e4]" started-at="2023-04-05T15:47:40 IST" name="afterMethod" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1680689860724" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="goToForgotPasswordPage()[pri:0, instance:testNgpack.VerifyForgotPasswordPage@f5ac9e4]" started-at="2023-04-05T15:47:40 IST" name="goToForgotPasswordPage" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1680689860790" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- goToForgotPasswordPage -->
+        <test-method signature="verifySearchButtonOnForgotPasswordPage()[pri:0, instance:testNgpack.VerifyForgotPasswordPage@f5ac9e4]" started-at="2023-04-05T15:47:40 IST" name="verifySearchButtonOnForgotPasswordPage" finished-at="2023-04-05T15:47:40 IST" duration-ms="0" status="SKIP">
+          <exception class="org.openqa.selenium.WebDriverException">
+            <message>
+              <![CDATA[disconnected: received Inspector.detached event
+  (failed to check if window was closed: disconnected: not connected to DevTools)
+  (Session info: MicrosoftEdge=111.0.1661.62)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-ADC0TJP', ip: '172.17.48.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
+Driver info: driver.version: EdgeDriver
+remote stacktrace: Backtrace:
+Microsoft::Applications::Events::EventProperties::SetProperty [0x00007FF6A59CA5C2+12658]
+Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF6A5962862+747634]
+(No symbol) [0x00007FF6A55FDD2E]
+(No symbol) [0x00007FF6A55EB70C]
+(No symbol) [0x00007FF6A55EAC38]
+(No symbol) [0x00007FF6A55E9DA4]
+(No symbol) [0x00007FF6A55E9CBC]
+(No symbol) [0x00007FF6A55E86D3]
+(No symbol) [0x00007FF6A55E8E36]
+(No symbol) [0x00007FF6A55E78E6]
+(No symbol) [0x00007FF6A55F55CD]
+(No symbol) [0x00007FF6A55E7692]
+(No symbol) [0x00007FF6A55E98D8]
+(No symbol) [0x00007FF6A55E86D3]
+(No symbol) [0x00007FF6A55E8E36]
+(No symbol) [0x00007FF6A55E78E6]
+(No symbol) [0x00007FF6A55F23D4]
+(No symbol) [0x00007FF6A55E7692]
+(No symbol) [0x00007FF6A55E98D8]
+(No symbol) [0x00007FF6A55E86D3]
+(No symbol) [0x00007FF6A55E8E36]
+(No symbol) [0x00007FF6A55E78E6]
+(No symbol) [0x00007FF6A55EF7B1]
+(No symbol) [0x00007FF6A55E7692]
+(No symbol) [0x00007FF6A55E98D8]
+(No symbol) [0x00007FF6A55E86D3]
+(No symbol) [0x00007FF6A55E8E36]
+(No symbol) [0x00007FF6A55E78E6]
+(No symbol) [0x00007FF6A55DE45A]
+(No symbol) [0x00007FF6A55E7692]
+(No symbol) [0x00007FF6A55E6AA1]
+(No symbol) [0x00007FF6A55E675F]
+(No symbol) [0x00007FF6A55FF44B]
+(No symbol) [0x00007FF6A55D6EA7]
+(No symbol) [0x00007FF6A55D5DF3]
+(No symbol) [0x00007FF6A5667316]
+(No symbol) [0x00007FF6A565F1C3]
+(No symbol) [0x00007FF6A56317D6]
+(No symbol) [0x00007FF6A56309B5]
+(No symbol) [0x00007FF6A5631F44]
+Microsoft::Applications::Events::EventProperties::SetProperty [0x00007FF6A5875530+147088]
+(No symbol) [0x00007FF6A57191A6]
+Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF6A58B4497+33959]
+Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF6A58B7F65+49013]
+Microsoft::Applications::Events::ILogManager::DispatchEventBroadcast [0x00007FF6A5BA9933+1305299]
+Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF6A596AE1C+781868]
+Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF6A5970344+803668]
+Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF6A597049C+804012]
+Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF6A59785A1+837041]
+BaseThreadInitThunk [0x00007FF995B07614+20]
+RtlUserThreadStart [0x00007FF996C826A1+33]
+]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.WebDriverException: disconnected: received Inspector.detached event
+  (failed to check if window was closed: disconnected: not connected to DevTools)
+  (Session info: MicrosoftEdge=111.0.1661.62)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-ADC0TJP', ip: '172.17.48.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
+Driver info: driver.version: EdgeDriver
+remote stacktrace: Backtrace:
+Microsoft::Applications::Events::EventProperties::SetProperty [0x00007FF6A59CA5C2+12658]
+Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF6A5962862+747634]
+(No symbol) [0x00007FF6A55FDD2E]
+(No symbol) [0x00007FF6A55EB70C]
+(No symbol) [0x00007FF6A55EAC38]
+(No symbol) [0x00007FF6A55E9DA4]
+(No symbol) [0x00007FF6A55E9CBC]
+(No symbol) [0x00007FF6A55E86D3]
+(No symbol) [0x00007FF6A55E8E36]
+(No symbol) [0x00007FF6A55E78E6]
+(No symbol) [0x00007FF6A55F55CD]
+(No symbol) [0x00007FF6A55E7692]
+(No symbol) [0x00007FF6A55E98D8]
+(No symbol) [0x00007FF6A55E86D3]
+(No symbol) [0x00007FF6A55E8E36]
+(No symbol) [0x00007FF6A55E78E6]
+(No symbol) [0x00007FF6A55F23D4]
+(No symbol) [0x00007FF6A55E7692]
+(No symbol) [0x00007FF6A55E98D8]
+(No symbol) [0x00007FF6A55E86D3]
+(No symbol) [0x00007FF6A55E8E36]
+(No symbol) [0x00007FF6A55E78E6]
+(No symbol) [0x00007FF6A55EF7B1]
+(No symbol) [0x00007FF6A55E7692]
+(No symbol) [0x00007FF6A55E98D8]
+(No symbol) [0x00007FF6A55E86D3]
+(No symbol) [0x00007FF6A55E8E36]
+(No symbol) [0x00007FF6A55E78E6]
+(No symbol) [0x00007FF6A55DE45A]
+(No symbol) [0x00007FF6A55E7692]
+(No symbol) [0x00007FF6A55E6AA1]
+(No symbol) [0x00007FF6A55E675F]
+(No symbol) [0x00007FF6A55FF44B]
+(No symbol) [0x00007FF6A55D6EA7]
+(No symbol) [0x00007FF6A55D5DF3]
+(No symbol) [0x00007FF6A5667316]
+(No symbol) [0x00007FF6A565F1C3]
+(No symbol) [0x00007FF6A56317D6]
+(No symbol) [0x00007FF6A56309B5]
+(No symbol) [0x00007FF6A5631F44]
+Microsoft::Applications::Events::EventProperties::SetProperty [0x00007FF6A5875530+147088]
+(No symbol) [0x00007FF6A57191A6]
+Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF6A58B4497+33959]
+Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF6A58B7F65+49013]
+Microsoft::Applications::Events::ILogManager::DispatchEventBroadcast [0x00007FF6A5BA9933+1305299]
+Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF6A596AE1C+781868]
+Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF6A5970344+803668]
+Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF6A597049C+804012]
+Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF6A59785A1+837041]
+BaseThreadInitThunk [0x00007FF995B07614+20]
+RtlUserThreadStart [0x00007FF996C826A1+33]
+
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
+at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
+at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
+at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+at java.base/java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:1002)
+at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:129)
+at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:527)
+at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:513)
+at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)
+at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+at java.base/java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:647)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:131)
+at org.openqa.selenium.edge.EdgeDriver.<init>(EdgeDriver.java:141)
+at org.openqa.selenium.edge.EdgeDriver.<init>(EdgeDriver.java:96)
+at browserSetup.Base.openEdgeBrowser(Base.java:19)
+at testNgpack.VerifySignUpPage.openBrowser(VerifySignUpPage.java:43)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:637)
+at org.testng.TestRunner.beforeRun(TestRunner.java:627)
+at org.testng.TestRunner.run(TestRunner.java:589)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySearchButtonOnForgotPasswordPage -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:testNgpack.VerifyForgotPasswordPage@f5ac9e4]" started-at="2023-04-05T15:47:40 IST" name="afterMethod" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1680689860804" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="goToForgotPasswordPage()[pri:0, instance:testNgpack.VerifyForgotPasswordPage@f5ac9e4]" started-at="2023-04-05T15:47:40 IST" name="goToForgotPasswordPage" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1680689860911" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- goToForgotPasswordPage -->
+        <test-method signature="verifyTheTextPresentOnForgotPasswordPage()[pri:0, instance:testNgpack.VerifyForgotPasswordPage@f5ac9e4]" started-at="2023-04-05T15:47:40 IST" name="verifyTheTextPresentOnForgotPasswordPage" finished-at="2023-04-05T15:47:40 IST" duration-ms="0" status="SKIP">
+          <exception class="org.openqa.selenium.WebDriverException">
+            <message>
+              <![CDATA[disconnected: received Inspector.detached event
+  (failed to check if window was closed: disconnected: not connected to DevTools)
+  (Session info: MicrosoftEdge=111.0.1661.62)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-ADC0TJP', ip: '172.17.48.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
+Driver info: driver.version: EdgeDriver
+remote stacktrace: Backtrace:
+Microsoft::Applications::Events::EventProperties::SetProperty [0x00007FF6A59CA5C2+12658]
+Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF6A5962862+747634]
+(No symbol) [0x00007FF6A55FDD2E]
+(No symbol) [0x00007FF6A55EB70C]
+(No symbol) [0x00007FF6A55EAC38]
+(No symbol) [0x00007FF6A55E9DA4]
+(No symbol) [0x00007FF6A55E9CBC]
+(No symbol) [0x00007FF6A55E86D3]
+(No symbol) [0x00007FF6A55E8E36]
+(No symbol) [0x00007FF6A55E78E6]
+(No symbol) [0x00007FF6A55F55CD]
+(No symbol) [0x00007FF6A55E7692]
+(No symbol) [0x00007FF6A55E98D8]
+(No symbol) [0x00007FF6A55E86D3]
+(No symbol) [0x00007FF6A55E8E36]
+(No symbol) [0x00007FF6A55E78E6]
+(No symbol) [0x00007FF6A55F23D4]
+(No symbol) [0x00007FF6A55E7692]
+(No symbol) [0x00007FF6A55E98D8]
+(No symbol) [0x00007FF6A55E86D3]
+(No symbol) [0x00007FF6A55E8E36]
+(No symbol) [0x00007FF6A55E78E6]
+(No symbol) [0x00007FF6A55EF7B1]
+(No symbol) [0x00007FF6A55E7692]
+(No symbol) [0x00007FF6A55E98D8]
+(No symbol) [0x00007FF6A55E86D3]
+(No symbol) [0x00007FF6A55E8E36]
+(No symbol) [0x00007FF6A55E78E6]
+(No symbol) [0x00007FF6A55DE45A]
+(No symbol) [0x00007FF6A55E7692]
+(No symbol) [0x00007FF6A55E6AA1]
+(No symbol) [0x00007FF6A55E675F]
+(No symbol) [0x00007FF6A55FF44B]
+(No symbol) [0x00007FF6A55D6EA7]
+(No symbol) [0x00007FF6A55D5DF3]
+(No symbol) [0x00007FF6A5667316]
+(No symbol) [0x00007FF6A565F1C3]
+(No symbol) [0x00007FF6A56317D6]
+(No symbol) [0x00007FF6A56309B5]
+(No symbol) [0x00007FF6A5631F44]
+Microsoft::Applications::Events::EventProperties::SetProperty [0x00007FF6A5875530+147088]
+(No symbol) [0x00007FF6A57191A6]
+Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF6A58B4497+33959]
+Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF6A58B7F65+49013]
+Microsoft::Applications::Events::ILogManager::DispatchEventBroadcast [0x00007FF6A5BA9933+1305299]
+Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF6A596AE1C+781868]
+Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF6A5970344+803668]
+Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF6A597049C+804012]
+Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF6A59785A1+837041]
+BaseThreadInitThunk [0x00007FF995B07614+20]
+RtlUserThreadStart [0x00007FF996C826A1+33]
+]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.WebDriverException: disconnected: received Inspector.detached event
+  (failed to check if window was closed: disconnected: not connected to DevTools)
+  (Session info: MicrosoftEdge=111.0.1661.62)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-ADC0TJP', ip: '172.17.48.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
+Driver info: driver.version: EdgeDriver
+remote stacktrace: Backtrace:
+Microsoft::Applications::Events::EventProperties::SetProperty [0x00007FF6A59CA5C2+12658]
+Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF6A5962862+747634]
+(No symbol) [0x00007FF6A55FDD2E]
+(No symbol) [0x00007FF6A55EB70C]
+(No symbol) [0x00007FF6A55EAC38]
+(No symbol) [0x00007FF6A55E9DA4]
+(No symbol) [0x00007FF6A55E9CBC]
+(No symbol) [0x00007FF6A55E86D3]
+(No symbol) [0x00007FF6A55E8E36]
+(No symbol) [0x00007FF6A55E78E6]
+(No symbol) [0x00007FF6A55F55CD]
+(No symbol) [0x00007FF6A55E7692]
+(No symbol) [0x00007FF6A55E98D8]
+(No symbol) [0x00007FF6A55E86D3]
+(No symbol) [0x00007FF6A55E8E36]
+(No symbol) [0x00007FF6A55E78E6]
+(No symbol) [0x00007FF6A55F23D4]
+(No symbol) [0x00007FF6A55E7692]
+(No symbol) [0x00007FF6A55E98D8]
+(No symbol) [0x00007FF6A55E86D3]
+(No symbol) [0x00007FF6A55E8E36]
+(No symbol) [0x00007FF6A55E78E6]
+(No symbol) [0x00007FF6A55EF7B1]
+(No symbol) [0x00007FF6A55E7692]
+(No symbol) [0x00007FF6A55E98D8]
+(No symbol) [0x00007FF6A55E86D3]
+(No symbol) [0x00007FF6A55E8E36]
+(No symbol) [0x00007FF6A55E78E6]
+(No symbol) [0x00007FF6A55DE45A]
+(No symbol) [0x00007FF6A55E7692]
+(No symbol) [0x00007FF6A55E6AA1]
+(No symbol) [0x00007FF6A55E675F]
+(No symbol) [0x00007FF6A55FF44B]
+(No symbol) [0x00007FF6A55D6EA7]
+(No symbol) [0x00007FF6A55D5DF3]
+(No symbol) [0x00007FF6A5667316]
+(No symbol) [0x00007FF6A565F1C3]
+(No symbol) [0x00007FF6A56317D6]
+(No symbol) [0x00007FF6A56309B5]
+(No symbol) [0x00007FF6A5631F44]
+Microsoft::Applications::Events::EventProperties::SetProperty [0x00007FF6A5875530+147088]
+(No symbol) [0x00007FF6A57191A6]
+Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF6A58B4497+33959]
+Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF6A58B7F65+49013]
+Microsoft::Applications::Events::ILogManager::DispatchEventBroadcast [0x00007FF6A5BA9933+1305299]
+Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF6A596AE1C+781868]
+Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF6A5970344+803668]
+Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF6A597049C+804012]
+Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF6A59785A1+837041]
+BaseThreadInitThunk [0x00007FF995B07614+20]
+RtlUserThreadStart [0x00007FF996C826A1+33]
+
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
+at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
+at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
+at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+at java.base/java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:1002)
+at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:129)
+at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:527)
+at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:513)
+at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)
+at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+at java.base/java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:647)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:131)
+at org.openqa.selenium.edge.EdgeDriver.<init>(EdgeDriver.java:141)
+at org.openqa.selenium.edge.EdgeDriver.<init>(EdgeDriver.java:96)
+at browserSetup.Base.openEdgeBrowser(Base.java:19)
+at testNgpack.VerifySignUpPage.openBrowser(VerifySignUpPage.java:43)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:637)
+at org.testng.TestRunner.beforeRun(TestRunner.java:627)
+at org.testng.TestRunner.run(TestRunner.java:589)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyTheTextPresentOnForgotPasswordPage -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:testNgpack.VerifyForgotPasswordPage@f5ac9e4]" started-at="2023-04-05T15:47:40 IST" name="afterMethod" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1680689860929" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="clearObjects()[pri:0, instance:testNgpack.VerifyForgotPasswordPage@f5ac9e4]" started-at="2023-04-05T15:47:40 IST" name="clearObjects" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1680689860934" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clearObjects -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:testNgpack.VerifyForgotPasswordPage@f5ac9e4]" started-at="2023-04-05T15:47:40 IST" name="closeBrowser" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1680689860940" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- testNgpack.VerifyForgotPasswordPage -->
+    </test> <!-- EdgeTest -->
+    <test started-at="2023-04-05T15:47:02 IST" name="ChromeTest" finished-at="2023-04-05T15:47:59 IST" duration-ms="56846">
+      <class name="testNgpack.VerifyLoginButton">
+        <test-method is-config="true" signature="openBrowser(java.lang.String)[pri:0, instance:testNgpack.VerifyLoginButton@7e0b85f9]" started-at="2023-04-05T15:47:24 IST" name="openBrowser" finished-at="2023-04-05T15:47:29 IST" duration-ms="4770" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openBrowser -->
+        <test-method is-config="true" signature="createPomObject()[pri:0, instance:testNgpack.VerifyLoginButton@7e0b85f9]" started-at="2023-04-05T15:47:35 IST" name="createPomObject" finished-at="2023-04-05T15:47:37 IST" duration-ms="1832" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createPomObject -->
+        <test-method is-config="true" signature="goToLoginPage()[pri:0, instance:testNgpack.VerifyLoginButton@7e0b85f9]" started-at="2023-04-05T15:47:37 IST" name="goToLoginPage" finished-at="2023-04-05T15:47:41 IST" duration-ms="3778" status="FAIL">
+          <exception class="org.openqa.selenium.WebDriverException">
+            <message>
+              <![CDATA[disconnected: received Inspector.detached event
+  (failed to check if window was closed: disconnected: Unable to receive message from renderer)
+  (Session info: chrome=111.0.5563.147)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-ADC0TJP', ip: '172.17.48.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 111.0.5563.147, chrome: {chromedriverVersion: 110.0.5481.77 (65ed616c6e8e..., userDataDir: C:\Users\hp\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:55773}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 95d0883ed689d17ed3d0bac61117d029]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.WebDriverException: disconnected: received Inspector.detached event
+  (failed to check if window was closed: disconnected: Unable to receive message from renderer)
+  (Session info: chrome=111.0.5563.147)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-ADC0TJP', ip: '172.17.48.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 111.0.5563.147, chrome: {chromedriverVersion: 110.0.5481.77 (65ed616c6e8e..., userDataDir: C:\Users\hp\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:55773}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 95d0883ed689d17ed3d0bac61117d029
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)
+at testNgpack.VerifyLoginButton.goToLoginPage(VerifyLoginButton.java:61)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- goToLoginPage -->
+        <test-method signature="clickOnLoginButton()[pri:0, instance:testNgpack.VerifyLoginButton@7e0b85f9]" started-at="2023-04-05T15:47:41 IST" name="clickOnLoginButton" finished-at="2023-04-05T15:47:41 IST" duration-ms="0" status="SKIP">
+          <exception class="org.openqa.selenium.WebDriverException">
+            <message>
+              <![CDATA[disconnected: received Inspector.detached event
+  (failed to check if window was closed: disconnected: Unable to receive message from renderer)
+  (Session info: chrome=111.0.5563.147)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-ADC0TJP', ip: '172.17.48.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 111.0.5563.147, chrome: {chromedriverVersion: 110.0.5481.77 (65ed616c6e8e..., userDataDir: C:\Users\hp\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:55773}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 95d0883ed689d17ed3d0bac61117d029]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.WebDriverException: disconnected: received Inspector.detached event
+  (failed to check if window was closed: disconnected: Unable to receive message from renderer)
+  (Session info: chrome=111.0.5563.147)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-ADC0TJP', ip: '172.17.48.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 111.0.5563.147, chrome: {chromedriverVersion: 110.0.5481.77 (65ed616c6e8e..., userDataDir: C:\Users\hp\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:55773}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 95d0883ed689d17ed3d0bac61117d029
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)
+at testNgpack.VerifyLoginButton.goToLoginPage(VerifyLoginButton.java:61)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickOnLoginButton -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:testNgpack.VerifyLoginButton@7e0b85f9]" started-at="2023-04-05T15:47:41 IST" name="afterMethod" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1680689861593" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="goToLoginPage()[pri:0, instance:testNgpack.VerifyLoginButton@7e0b85f9]" started-at="2023-04-05T15:47:41 IST" name="goToLoginPage" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1680689861594" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- goToLoginPage -->
+        <test-method signature="verifyNullEmailPasswordLoginPage()[pri:0, instance:testNgpack.VerifyLoginButton@7e0b85f9]" started-at="2023-04-05T15:47:41 IST" name="verifyNullEmailPasswordLoginPage" finished-at="2023-04-05T15:47:41 IST" duration-ms="0" status="SKIP">
+          <exception class="org.openqa.selenium.WebDriverException">
+            <message>
+              <![CDATA[disconnected: received Inspector.detached event
+  (failed to check if window was closed: disconnected: Unable to receive message from renderer)
+  (Session info: chrome=111.0.5563.147)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-ADC0TJP', ip: '172.17.48.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 111.0.5563.147, chrome: {chromedriverVersion: 110.0.5481.77 (65ed616c6e8e..., userDataDir: C:\Users\hp\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:55773}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 95d0883ed689d17ed3d0bac61117d029]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.WebDriverException: disconnected: received Inspector.detached event
+  (failed to check if window was closed: disconnected: Unable to receive message from renderer)
+  (Session info: chrome=111.0.5563.147)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-ADC0TJP', ip: '172.17.48.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 111.0.5563.147, chrome: {chromedriverVersion: 110.0.5481.77 (65ed616c6e8e..., userDataDir: C:\Users\hp\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:55773}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 95d0883ed689d17ed3d0bac61117d029
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)
+at testNgpack.VerifyLoginButton.goToLoginPage(VerifyLoginButton.java:61)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyNullEmailPasswordLoginPage -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:testNgpack.VerifyLoginButton@7e0b85f9]" started-at="2023-04-05T15:47:41 IST" name="afterMethod" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1680689861601" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="clearObjects()[pri:0, instance:testNgpack.VerifyLoginButton@7e0b85f9]" started-at="2023-04-05T15:47:41 IST" name="clearObjects" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1680689861603" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clearObjects -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:testNgpack.VerifyLoginButton@7e0b85f9]" started-at="2023-04-05T15:47:59 IST" name="closeBrowser" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1680689879485" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- testNgpack.VerifyLoginButton -->
+      <class name="testNgpack.VerifySignUpPage">
+        <test-method is-config="true" signature="openBrowser(java.lang.String)[pri:0, instance:testNgpack.VerifySignUpPage@635eaaf1]" started-at="2023-04-05T15:47:29 IST" name="openBrowser" finished-at="2023-04-05T15:47:35 IST" duration-ms="5656" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openBrowser -->
+        <test-method is-config="true" signature="createPomObject()[pri:0, instance:testNgpack.VerifySignUpPage@635eaaf1]" started-at="2023-04-05T15:47:35 IST" name="createPomObject" finished-at="2023-04-05T15:47:38 IST" duration-ms="2180" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createPomObject -->
+        <test-method is-config="true" signature="goToSignUpPage()[pri:0, instance:testNgpack.VerifySignUpPage@635eaaf1]" started-at="2023-04-05T15:47:38 IST" name="goToSignUpPage" finished-at="2023-04-05T15:47:59 IST" duration-ms="21316" status="FAIL">
+          <exception class="org.openqa.selenium.WebDriverException">
+            <message>
+              <![CDATA[java.net.ConnectException: Failed to connect to localhost/[0:0:0:0:0:0:0:1]:14692
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-ADC0TJP', ip: '172.17.48.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
+Driver info: driver.version: RemoteWebDriver]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.WebDriverException: java.net.ConnectException: Failed to connect to localhost/[0:0:0:0:0:0:0:1]:14692
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-ADC0TJP', ip: '172.17.48.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
+Driver info: driver.version: RemoteWebDriver
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:92)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)
+at testNgpack.VerifySignUpPage.goToSignUpPage(VerifySignUpPage.java:62)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: java.net.ConnectException: Failed to connect to localhost/[0:0:0:0:0:0:0:1]:14692
+at okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.java:247)
+at okhttp3.internal.connection.RealConnection.connect(RealConnection.java:165)
+at okhttp3.internal.connection.StreamAllocation.findConnection(StreamAllocation.java:257)
+at okhttp3.internal.connection.StreamAllocation.findHealthyConnection(StreamAllocation.java:135)
+at okhttp3.internal.connection.StreamAllocation.newStream(StreamAllocation.java:114)
+at okhttp3.internal.connection.ConnectInterceptor.intercept(ConnectInterceptor.java:42)
+at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
+at okhttp3.internal.cache.CacheInterceptor.intercept(CacheInterceptor.java:93)
+at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
+at okhttp3.internal.http.BridgeInterceptor.intercept(BridgeInterceptor.java:93)
+at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+at okhttp3.internal.http.RetryAndFollowUpInterceptor.intercept(RetryAndFollowUpInterceptor.java:126)
+at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
+at okhttp3.RealCall.getResponseWithInterceptorChain(RealCall.java:200)
+at okhttp3.RealCall.execute(RealCall.java:77)
+at org.openqa.selenium.remote.internal.OkHttpClient.execute(OkHttpClient.java:103)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:155)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+... 22 more
+Caused by: java.net.ConnectException: Connection refused: no further information
+at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:672)
+at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:542)
+at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:597)
+at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+at java.base/java.net.Socket.connect(Socket.java:633)
+at okhttp3.internal.platform.Platform.connectSocket(Platform.java:129)
+at okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.java:245)
+... 42 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- goToSignUpPage -->
+        <test-method signature="verifySignUpButtonOnSignUpPage()[pri:0, instance:testNgpack.VerifySignUpPage@635eaaf1]" started-at="2023-04-05T15:47:59 IST" name="verifySignUpButtonOnSignUpPage" finished-at="2023-04-05T15:47:59 IST" duration-ms="0" status="SKIP">
+          <exception class="org.openqa.selenium.WebDriverException">
+            <message>
+              <![CDATA[java.net.ConnectException: Failed to connect to localhost/[0:0:0:0:0:0:0:1]:14692
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-ADC0TJP', ip: '172.17.48.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
+Driver info: driver.version: RemoteWebDriver]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.WebDriverException: java.net.ConnectException: Failed to connect to localhost/[0:0:0:0:0:0:0:1]:14692
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-ADC0TJP', ip: '172.17.48.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
+Driver info: driver.version: RemoteWebDriver
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:92)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)
+at testNgpack.VerifySignUpPage.goToSignUpPage(VerifySignUpPage.java:62)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: java.net.ConnectException: Failed to connect to localhost/[0:0:0:0:0:0:0:1]:14692
+at okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.java:247)
+at okhttp3.internal.connection.RealConnection.connect(RealConnection.java:165)
+at okhttp3.internal.connection.StreamAllocation.findConnection(StreamAllocation.java:257)
+at okhttp3.internal.connection.StreamAllocation.findHealthyConnection(StreamAllocation.java:135)
+at okhttp3.internal.connection.StreamAllocation.newStream(StreamAllocation.java:114)
+at okhttp3.internal.connection.ConnectInterceptor.intercept(ConnectInterceptor.java:42)
+at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
+at okhttp3.internal.cache.CacheInterceptor.intercept(CacheInterceptor.java:93)
+at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
+at okhttp3.internal.http.BridgeInterceptor.intercept(BridgeInterceptor.java:93)
+at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+at okhttp3.internal.http.RetryAndFollowUpInterceptor.intercept(RetryAndFollowUpInterceptor.java:126)
+at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
+at okhttp3.RealCall.getResponseWithInterceptorChain(RealCall.java:200)
+at okhttp3.RealCall.execute(RealCall.java:77)
+at org.openqa.selenium.remote.internal.OkHttpClient.execute(OkHttpClient.java:103)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:155)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+... 22 more
+Caused by: java.net.ConnectException: Connection refused: no further information
+at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:672)
+at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:542)
+at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:597)
+at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+at java.base/java.net.Socket.connect(Socket.java:633)
+at okhttp3.internal.platform.Platform.connectSocket(Platform.java:129)
+at okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.java:245)
+... 42 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySignUpButtonOnSignUpPage -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:testNgpack.VerifySignUpPage@635eaaf1]" started-at="2023-04-05T15:47:59 IST" name="afterMethod" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1680689879478" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="clearObjects()[pri:0, instance:testNgpack.VerifySignUpPage@635eaaf1]" started-at="2023-04-05T15:47:59 IST" name="clearObjects" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1680689879480" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clearObjects -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:testNgpack.VerifySignUpPage@635eaaf1]" started-at="2023-04-05T15:47:59 IST" name="closeBrowser" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1680689879487" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- testNgpack.VerifySignUpPage -->
+      <class name="testNgpack.VerifyForgotPasswordPage">
+        <test-method is-config="true" signature="openBrowser(java.lang.String)[pri:0, instance:testNgpack.VerifyForgotPasswordPage@31d7b7bf]" started-at="2023-04-05T15:47:02 IST" name="openBrowser" finished-at="2023-04-05T15:47:24 IST" duration-ms="22215" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openBrowser -->
+        <test-method is-config="true" signature="createPomObject()[pri:0, instance:testNgpack.VerifyForgotPasswordPage@31d7b7bf]" started-at="2023-04-05T15:47:35 IST" name="createPomObject" finished-at="2023-04-05T15:47:37 IST" duration-ms="1572" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createPomObject -->
+        <test-method is-config="true" signature="goToForgotPasswordPage()[pri:0, instance:testNgpack.VerifyForgotPasswordPage@31d7b7bf]" started-at="2023-04-05T15:47:37 IST" name="goToForgotPasswordPage" finished-at="2023-04-05T15:47:48 IST" duration-ms="11082" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchWindowException">
+            <message>
+              <![CDATA[no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=111.0.5563.147)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-ADC0TJP', ip: '172.17.48.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 111.0.5563.147, chrome: {chromedriverVersion: 110.0.5481.77 (65ed616c6e8e..., userDataDir: C:\Users\hp\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:55734}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 0001ad49809467ee6b590828db4658b2
+*** Element info: {Using=xpath, value= //a[text()='Forgotten password?']}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=111.0.5563.147)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-ADC0TJP', ip: '172.17.48.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 111.0.5563.147, chrome: {chromedriverVersion: 110.0.5481.77 (65ed616c6e8e..., userDataDir: C:\Users\hp\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:55734}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 0001ad49809467ee6b590828db4658b2
+*** Element info: {Using=xpath, value= //a[text()='Forgotten password?']}
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at jdk.proxy2/jdk.proxy2.$Proxy17.click(Unknown Source)
+at page.LoginPage.clickForgotPassword(LoginPage.java:60)
+at testNgpack.VerifyForgotPasswordPage.goToForgotPasswordPage(VerifyForgotPasswordPage.java:69)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchWindowException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- goToForgotPasswordPage -->
+        <test-method signature="verifyCancelButtonOfForgotPasswordPage()[pri:0, instance:testNgpack.VerifyForgotPasswordPage@31d7b7bf]" started-at="2023-04-05T15:47:48 IST" name="verifyCancelButtonOfForgotPasswordPage" finished-at="2023-04-05T15:47:48 IST" duration-ms="0" status="SKIP">
+          <exception class="org.openqa.selenium.NoSuchWindowException">
+            <message>
+              <![CDATA[no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=111.0.5563.147)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-ADC0TJP', ip: '172.17.48.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 111.0.5563.147, chrome: {chromedriverVersion: 110.0.5481.77 (65ed616c6e8e..., userDataDir: C:\Users\hp\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:55734}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 0001ad49809467ee6b590828db4658b2
+*** Element info: {Using=xpath, value= //a[text()='Forgotten password?']}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=111.0.5563.147)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-ADC0TJP', ip: '172.17.48.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 111.0.5563.147, chrome: {chromedriverVersion: 110.0.5481.77 (65ed616c6e8e..., userDataDir: C:\Users\hp\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:55734}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 0001ad49809467ee6b590828db4658b2
+*** Element info: {Using=xpath, value= //a[text()='Forgotten password?']}
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at jdk.proxy2/jdk.proxy2.$Proxy17.click(Unknown Source)
+at page.LoginPage.clickForgotPassword(LoginPage.java:60)
+at testNgpack.VerifyForgotPasswordPage.goToForgotPasswordPage(VerifyForgotPasswordPage.java:69)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchWindowException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyCancelButtonOfForgotPasswordPage -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:testNgpack.VerifyForgotPasswordPage@31d7b7bf]" started-at="2023-04-05T15:47:48 IST" name="afterMethod" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1680689868673" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="goToForgotPasswordPage()[pri:0, instance:testNgpack.VerifyForgotPasswordPage@31d7b7bf]" started-at="2023-04-05T15:47:48 IST" name="goToForgotPasswordPage" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1680689868676" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- goToForgotPasswordPage -->
+        <test-method signature="verifySearchButtonOnForgotPasswordPage()[pri:0, instance:testNgpack.VerifyForgotPasswordPage@31d7b7bf]" started-at="2023-04-05T15:47:48 IST" name="verifySearchButtonOnForgotPasswordPage" finished-at="2023-04-05T15:47:48 IST" duration-ms="0" status="SKIP">
+          <exception class="org.openqa.selenium.NoSuchWindowException">
+            <message>
+              <![CDATA[no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=111.0.5563.147)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-ADC0TJP', ip: '172.17.48.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 111.0.5563.147, chrome: {chromedriverVersion: 110.0.5481.77 (65ed616c6e8e..., userDataDir: C:\Users\hp\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:55734}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 0001ad49809467ee6b590828db4658b2
+*** Element info: {Using=xpath, value= //a[text()='Forgotten password?']}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=111.0.5563.147)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-ADC0TJP', ip: '172.17.48.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 111.0.5563.147, chrome: {chromedriverVersion: 110.0.5481.77 (65ed616c6e8e..., userDataDir: C:\Users\hp\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:55734}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 0001ad49809467ee6b590828db4658b2
+*** Element info: {Using=xpath, value= //a[text()='Forgotten password?']}
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at jdk.proxy2/jdk.proxy2.$Proxy17.click(Unknown Source)
+at page.LoginPage.clickForgotPassword(LoginPage.java:60)
+at testNgpack.VerifyForgotPasswordPage.goToForgotPasswordPage(VerifyForgotPasswordPage.java:69)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchWindowException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySearchButtonOnForgotPasswordPage -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:testNgpack.VerifyForgotPasswordPage@31d7b7bf]" started-at="2023-04-05T15:47:48 IST" name="afterMethod" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1680689868685" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="goToForgotPasswordPage()[pri:0, instance:testNgpack.VerifyForgotPasswordPage@31d7b7bf]" started-at="2023-04-05T15:47:48 IST" name="goToForgotPasswordPage" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1680689868686" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- goToForgotPasswordPage -->
+        <test-method signature="verifyTheTextPresentOnForgotPasswordPage()[pri:0, instance:testNgpack.VerifyForgotPasswordPage@31d7b7bf]" started-at="2023-04-05T15:47:48 IST" name="verifyTheTextPresentOnForgotPasswordPage" finished-at="2023-04-05T15:47:48 IST" duration-ms="0" status="SKIP">
+          <exception class="org.openqa.selenium.NoSuchWindowException">
+            <message>
+              <![CDATA[no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=111.0.5563.147)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-ADC0TJP', ip: '172.17.48.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 111.0.5563.147, chrome: {chromedriverVersion: 110.0.5481.77 (65ed616c6e8e..., userDataDir: C:\Users\hp\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:55734}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 0001ad49809467ee6b590828db4658b2
+*** Element info: {Using=xpath, value= //a[text()='Forgotten password?']}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=111.0.5563.147)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-ADC0TJP', ip: '172.17.48.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 111.0.5563.147, chrome: {chromedriverVersion: 110.0.5481.77 (65ed616c6e8e..., userDataDir: C:\Users\hp\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:55734}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 0001ad49809467ee6b590828db4658b2
+*** Element info: {Using=xpath, value= //a[text()='Forgotten password?']}
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at jdk.proxy2/jdk.proxy2.$Proxy17.click(Unknown Source)
+at page.LoginPage.clickForgotPassword(LoginPage.java:60)
+at testNgpack.VerifyForgotPasswordPage.goToForgotPasswordPage(VerifyForgotPasswordPage.java:69)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchWindowException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyTheTextPresentOnForgotPasswordPage -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:testNgpack.VerifyForgotPasswordPage@31d7b7bf]" started-at="2023-04-05T15:47:48 IST" name="afterMethod" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1680689868692" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="clearObjects()[pri:0, instance:testNgpack.VerifyForgotPasswordPage@31d7b7bf]" started-at="2023-04-05T15:47:48 IST" name="clearObjects" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1680689868693" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clearObjects -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:testNgpack.VerifyForgotPasswordPage@31d7b7bf]" started-at="2023-04-05T15:47:59 IST" name="closeBrowser" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1680689879485" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- testNgpack.VerifyForgotPasswordPage -->
+    </test> <!-- ChromeTest -->
+  </suite> <!-- Suite1234 -->
+</testng-results>

@@ -1,0 +1,1586 @@
+<html>
+<head>
+<title>TestNG:  EdgeTest</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>EdgeTest</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>0/0/6</td>
+</tr><tr>
+<td>Started on:</td><td>Wed Apr 05 15:47:02 IST 2023</td>
+</tr>
+<tr><td>Total time:</td><td>38 seconds (38305 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED CONFIGURATIONS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='testNgpack.VerifySignUpPage.openBrowser()'><b>openBrowser</b><br>Test class: testNgpack.VerifySignUpPage<br>Parameters: Edge</td>
+<td><div><pre>org.openqa.selenium.WebDriverException: disconnected: received Inspector.detached event
+  (failed to check if window was closed: disconnected: not connected to DevTools)
+  (Session info: MicrosoftEdge=111.0.1661.62)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-ADC0TJP&apos;, ip: &apos;172.17.48.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.5&apos;
+Driver info: driver.version: EdgeDriver
+remote stacktrace: Backtrace:
+	Microsoft::Applications::Events::EventProperties::SetProperty [0x00007FF6A59CA5C2+12658]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF6A5962862+747634]
+	(No symbol) [0x00007FF6A55FDD2E]
+	(No symbol) [0x00007FF6A55EB70C]
+	(No symbol) [0x00007FF6A55EAC38]
+	(No symbol) [0x00007FF6A55E9DA4]
+	(No symbol) [0x00007FF6A55E9CBC]
+	(No symbol) [0x00007FF6A55E86D3]
+	(No symbol) [0x00007FF6A55E8E36]
+	(No symbol) [0x00007FF6A55E78E6]
+	(No symbol) [0x00007FF6A55F55CD]
+	(No symbol) [0x00007FF6A55E7692]
+	(No symbol) [0x00007FF6A55E98D8]
+	(No symbol) [0x00007FF6A55E86D3]
+	(No symbol) [0x00007FF6A55E8E36]
+	(No symbol) [0x00007FF6A55E78E6]
+	(No symbol) [0x00007FF6A55F23D4]
+	(No symbol) [0x00007FF6A55E7692]
+	(No symbol) [0x00007FF6A55E98D8]
+	(No symbol) [0x00007FF6A55E86D3]
+	(No symbol) [0x00007FF6A55E8E36]
+	(No symbol) [0x00007FF6A55E78E6]
+	(No symbol) [0x00007FF6A55EF7B1]
+	(No symbol) [0x00007FF6A55E7692]
+	(No symbol) [0x00007FF6A55E98D8]
+	(No symbol) [0x00007FF6A55E86D3]
+	(No symbol) [0x00007FF6A55E8E36]
+	(No symbol) [0x00007FF6A55E78E6]
+	(No symbol) [0x00007FF6A55DE45A]
+	(No symbol) [0x00007FF6A55E7692]
+	(No symbol) [0x00007FF6A55E6AA1]
+	(No symbol) [0x00007FF6A55E675F]
+	(No symbol) [0x00007FF6A55FF44B]
+	(No symbol) [0x00007FF6A55D6EA7]
+	(No symbol) [0x00007FF6A55D5DF3]
+	(No symbol) [0x00007FF6A5667316]
+	(No symbol) [0x00007FF6A565F1C3]
+	(No symbol) [0x00007FF6A56317D6]
+	(No symbol) [0x00007FF6A56309B5]
+	(No symbol) [0x00007FF6A5631F44]
+	Microsoft::Applications::Events::EventProperties::SetProperty [0x00007FF6A5875530+147088]
+	(No symbol) [0x00007FF6A57191A6]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF6A58B4497+33959]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF6A58B7F65+49013]
+	Microsoft::Applications::Events::ILogManager::DispatchEventBroadcast [0x00007FF6A5BA9933+1305299]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF6A596AE1C+781868]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF6A5970344+803668]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF6A597049C+804012]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF6A59785A1+837041]
+	BaseThreadInitThunk [0x00007FF995B07614+20]
+	RtlUserThreadStart [0x00007FF996C826A1+33]
+
+	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
+	at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
+	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:1002)
+	at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:129)
+	at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:527)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:513)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:647)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:141)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:96)
+	at browserSetup.Base.openEdgeBrowser(Base.java:19)
+	at testNgpack.VerifySignUpPage.openBrowser(VerifySignUpPage.java:43)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 20 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1061274984", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1061274984'><pre>org.openqa.selenium.WebDriverException: disconnected: received Inspector.detached event
+  (failed to check if window was closed: disconnected: not connected to DevTools)
+  (Session info: MicrosoftEdge=111.0.1661.62)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-ADC0TJP&apos;, ip: &apos;172.17.48.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.5&apos;
+Driver info: driver.version: EdgeDriver
+remote stacktrace: Backtrace:
+	Microsoft::Applications::Events::EventProperties::SetProperty [0x00007FF6A59CA5C2+12658]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF6A5962862+747634]
+	(No symbol) [0x00007FF6A55FDD2E]
+	(No symbol) [0x00007FF6A55EB70C]
+	(No symbol) [0x00007FF6A55EAC38]
+	(No symbol) [0x00007FF6A55E9DA4]
+	(No symbol) [0x00007FF6A55E9CBC]
+	(No symbol) [0x00007FF6A55E86D3]
+	(No symbol) [0x00007FF6A55E8E36]
+	(No symbol) [0x00007FF6A55E78E6]
+	(No symbol) [0x00007FF6A55F55CD]
+	(No symbol) [0x00007FF6A55E7692]
+	(No symbol) [0x00007FF6A55E98D8]
+	(No symbol) [0x00007FF6A55E86D3]
+	(No symbol) [0x00007FF6A55E8E36]
+	(No symbol) [0x00007FF6A55E78E6]
+	(No symbol) [0x00007FF6A55F23D4]
+	(No symbol) [0x00007FF6A55E7692]
+	(No symbol) [0x00007FF6A55E98D8]
+	(No symbol) [0x00007FF6A55E86D3]
+	(No symbol) [0x00007FF6A55E8E36]
+	(No symbol) [0x00007FF6A55E78E6]
+	(No symbol) [0x00007FF6A55EF7B1]
+	(No symbol) [0x00007FF6A55E7692]
+	(No symbol) [0x00007FF6A55E98D8]
+	(No symbol) [0x00007FF6A55E86D3]
+	(No symbol) [0x00007FF6A55E8E36]
+	(No symbol) [0x00007FF6A55E78E6]
+	(No symbol) [0x00007FF6A55DE45A]
+	(No symbol) [0x00007FF6A55E7692]
+	(No symbol) [0x00007FF6A55E6AA1]
+	(No symbol) [0x00007FF6A55E675F]
+	(No symbol) [0x00007FF6A55FF44B]
+	(No symbol) [0x00007FF6A55D6EA7]
+	(No symbol) [0x00007FF6A55D5DF3]
+	(No symbol) [0x00007FF6A5667316]
+	(No symbol) [0x00007FF6A565F1C3]
+	(No symbol) [0x00007FF6A56317D6]
+	(No symbol) [0x00007FF6A56309B5]
+	(No symbol) [0x00007FF6A5631F44]
+	Microsoft::Applications::Events::EventProperties::SetProperty [0x00007FF6A5875530+147088]
+	(No symbol) [0x00007FF6A57191A6]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF6A58B4497+33959]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF6A58B7F65+49013]
+	Microsoft::Applications::Events::ILogManager::DispatchEventBroadcast [0x00007FF6A5BA9933+1305299]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF6A596AE1C+781868]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF6A5970344+803668]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF6A597049C+804012]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF6A59785A1+837041]
+	BaseThreadInitThunk [0x00007FF995B07614+20]
+	RtlUserThreadStart [0x00007FF996C826A1+33]
+
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
+	at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
+	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:1002)
+	at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:129)
+	at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:527)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:513)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:647)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:141)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:96)
+	at browserSetup.Base.openEdgeBrowser(Base.java:19)
+	at testNgpack.VerifySignUpPage.openBrowser(VerifySignUpPage.java:43)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+	at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:637)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:627)
+	at org.testng.TestRunner.run(TestRunner.java:589)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+</pre></div></td>
+<td>10</td>
+<td>testNgpack.VerifySignUpPage@123ef382</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED CONFIGURATIONS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='testNgpack.VerifyForgotPasswordPage.goToForgotPasswordPage()'><b>goToForgotPasswordPage</b><br>Test class: testNgpack.VerifyForgotPasswordPage</td>
+<td></td>
+<td>-1680689860</td>
+<td>testNgpack.VerifyForgotPasswordPage@f5ac9e4</td></tr>
+<tr>
+<td title='testNgpack.VerifyLoginButton.clearObjects()'><b>clearObjects</b><br>Test class: testNgpack.VerifyLoginButton</td>
+<td></td>
+<td>-1680689860</td>
+<td>testNgpack.VerifyLoginButton@59fd97a8</td></tr>
+<tr>
+<td title='testNgpack.VerifySignUpPage.afterMethod()'><b>afterMethod</b><br>Test class: testNgpack.VerifySignUpPage</td>
+<td></td>
+<td>-1680689860</td>
+<td>testNgpack.VerifySignUpPage@123ef382</td></tr>
+<tr>
+<td title='testNgpack.VerifyForgotPasswordPage.afterMethod()'><b>afterMethod</b><br>Test class: testNgpack.VerifyForgotPasswordPage</td>
+<td></td>
+<td>-1680689860</td>
+<td>testNgpack.VerifyForgotPasswordPage@f5ac9e4</td></tr>
+<tr>
+<td title='testNgpack.VerifyForgotPasswordPage.afterMethod()'><b>afterMethod</b><br>Test class: testNgpack.VerifyForgotPasswordPage</td>
+<td></td>
+<td>-1680689860</td>
+<td>testNgpack.VerifyForgotPasswordPage@f5ac9e4</td></tr>
+<tr>
+<td title='testNgpack.VerifyForgotPasswordPage.createPomObject()'><b>createPomObject</b><br>Test class: testNgpack.VerifyForgotPasswordPage</td>
+<td></td>
+<td>-1680689860</td>
+<td>testNgpack.VerifyForgotPasswordPage@f5ac9e4</td></tr>
+<tr>
+<td title='testNgpack.VerifyLoginButton.afterMethod()'><b>afterMethod</b><br>Test class: testNgpack.VerifyLoginButton</td>
+<td></td>
+<td>-1680689860</td>
+<td>testNgpack.VerifyLoginButton@59fd97a8</td></tr>
+<tr>
+<td title='testNgpack.VerifySignUpPage.goToSignUpPage()'><b>goToSignUpPage</b><br>Test class: testNgpack.VerifySignUpPage</td>
+<td></td>
+<td>-1680689860</td>
+<td>testNgpack.VerifySignUpPage@123ef382</td></tr>
+<tr>
+<td title='testNgpack.VerifySignUpPage.clearObjects()'><b>clearObjects</b><br>Test class: testNgpack.VerifySignUpPage</td>
+<td></td>
+<td>-1680689860</td>
+<td>testNgpack.VerifySignUpPage@123ef382</td></tr>
+<tr>
+<td title='testNgpack.VerifyForgotPasswordPage.clearObjects()'><b>clearObjects</b><br>Test class: testNgpack.VerifyForgotPasswordPage</td>
+<td></td>
+<td>-1680689860</td>
+<td>testNgpack.VerifyForgotPasswordPage@f5ac9e4</td></tr>
+<tr>
+<td title='testNgpack.VerifyLoginButton.goToLoginPage()'><b>goToLoginPage</b><br>Test class: testNgpack.VerifyLoginButton</td>
+<td></td>
+<td>-1680689860</td>
+<td>testNgpack.VerifyLoginButton@59fd97a8</td></tr>
+<tr>
+<td title='testNgpack.VerifyForgotPasswordPage.closeBrowser()'><b>closeBrowser</b><br>Test class: testNgpack.VerifyForgotPasswordPage</td>
+<td></td>
+<td>-1680689860</td>
+<td>testNgpack.VerifyForgotPasswordPage@f5ac9e4</td></tr>
+<tr>
+<td title='testNgpack.VerifyLoginButton.goToLoginPage()'><b>goToLoginPage</b><br>Test class: testNgpack.VerifyLoginButton</td>
+<td></td>
+<td>-1680689860</td>
+<td>testNgpack.VerifyLoginButton@59fd97a8</td></tr>
+<tr>
+<td title='testNgpack.VerifySignUpPage.closeBrowser()'><b>closeBrowser</b><br>Test class: testNgpack.VerifySignUpPage</td>
+<td></td>
+<td>-1680689860</td>
+<td>testNgpack.VerifySignUpPage@123ef382</td></tr>
+<tr>
+<td title='testNgpack.VerifySignUpPage.createPomObject()'><b>createPomObject</b><br>Test class: testNgpack.VerifySignUpPage</td>
+<td></td>
+<td>-1680689860</td>
+<td>testNgpack.VerifySignUpPage@123ef382</td></tr>
+<tr>
+<td title='testNgpack.VerifyLoginButton.createPomObject()'><b>createPomObject</b><br>Test class: testNgpack.VerifyLoginButton</td>
+<td></td>
+<td>-1680689860</td>
+<td>testNgpack.VerifyLoginButton@59fd97a8</td></tr>
+<tr>
+<td title='testNgpack.VerifyForgotPasswordPage.afterMethod()'><b>afterMethod</b><br>Test class: testNgpack.VerifyForgotPasswordPage</td>
+<td></td>
+<td>-1680689860</td>
+<td>testNgpack.VerifyForgotPasswordPage@f5ac9e4</td></tr>
+<tr>
+<td title='testNgpack.VerifyLoginButton.afterMethod()'><b>afterMethod</b><br>Test class: testNgpack.VerifyLoginButton</td>
+<td></td>
+<td>-1680689860</td>
+<td>testNgpack.VerifyLoginButton@59fd97a8</td></tr>
+<tr>
+<td title='testNgpack.VerifyLoginButton.closeBrowser()'><b>closeBrowser</b><br>Test class: testNgpack.VerifyLoginButton</td>
+<td></td>
+<td>-1680689860</td>
+<td>testNgpack.VerifyLoginButton@59fd97a8</td></tr>
+<tr>
+<td title='testNgpack.VerifyForgotPasswordPage.goToForgotPasswordPage()'><b>goToForgotPasswordPage</b><br>Test class: testNgpack.VerifyForgotPasswordPage</td>
+<td></td>
+<td>-1680689860</td>
+<td>testNgpack.VerifyForgotPasswordPage@f5ac9e4</td></tr>
+<tr>
+<td title='testNgpack.VerifyForgotPasswordPage.goToForgotPasswordPage()'><b>goToForgotPasswordPage</b><br>Test class: testNgpack.VerifyForgotPasswordPage</td>
+<td></td>
+<td>-1680689860</td>
+<td>testNgpack.VerifyForgotPasswordPage@f5ac9e4</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='testNgpack.VerifyLoginButton.verifyNullEmailPasswordLoginPage()'><b>verifyNullEmailPasswordLoginPage</b><br>Test class: testNgpack.VerifyLoginButton</td>
+<td><div><pre>org.openqa.selenium.WebDriverException: disconnected: received Inspector.detached event
+  (failed to check if window was closed: disconnected: not connected to DevTools)
+  (Session info: MicrosoftEdge=111.0.1661.62)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-ADC0TJP&apos;, ip: &apos;172.17.48.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.5&apos;
+Driver info: driver.version: EdgeDriver
+remote stacktrace: Backtrace:
+	Microsoft::Applications::Events::EventProperties::SetProperty [0x00007FF6A59CA5C2+12658]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF6A5962862+747634]
+	(No symbol) [0x00007FF6A55FDD2E]
+	(No symbol) [0x00007FF6A55EB70C]
+	(No symbol) [0x00007FF6A55EAC38]
+	(No symbol) [0x00007FF6A55E9DA4]
+	(No symbol) [0x00007FF6A55E9CBC]
+	(No symbol) [0x00007FF6A55E86D3]
+	(No symbol) [0x00007FF6A55E8E36]
+	(No symbol) [0x00007FF6A55E78E6]
+	(No symbol) [0x00007FF6A55F55CD]
+	(No symbol) [0x00007FF6A55E7692]
+	(No symbol) [0x00007FF6A55E98D8]
+	(No symbol) [0x00007FF6A55E86D3]
+	(No symbol) [0x00007FF6A55E8E36]
+	(No symbol) [0x00007FF6A55E78E6]
+	(No symbol) [0x00007FF6A55F23D4]
+	(No symbol) [0x00007FF6A55E7692]
+	(No symbol) [0x00007FF6A55E98D8]
+	(No symbol) [0x00007FF6A55E86D3]
+	(No symbol) [0x00007FF6A55E8E36]
+	(No symbol) [0x00007FF6A55E78E6]
+	(No symbol) [0x00007FF6A55EF7B1]
+	(No symbol) [0x00007FF6A55E7692]
+	(No symbol) [0x00007FF6A55E98D8]
+	(No symbol) [0x00007FF6A55E86D3]
+	(No symbol) [0x00007FF6A55E8E36]
+	(No symbol) [0x00007FF6A55E78E6]
+	(No symbol) [0x00007FF6A55DE45A]
+	(No symbol) [0x00007FF6A55E7692]
+	(No symbol) [0x00007FF6A55E6AA1]
+	(No symbol) [0x00007FF6A55E675F]
+	(No symbol) [0x00007FF6A55FF44B]
+	(No symbol) [0x00007FF6A55D6EA7]
+	(No symbol) [0x00007FF6A55D5DF3]
+	(No symbol) [0x00007FF6A5667316]
+	(No symbol) [0x00007FF6A565F1C3]
+	(No symbol) [0x00007FF6A56317D6]
+	(No symbol) [0x00007FF6A56309B5]
+	(No symbol) [0x00007FF6A5631F44]
+	Microsoft::Applications::Events::EventProperties::SetProperty [0x00007FF6A5875530+147088]
+	(No symbol) [0x00007FF6A57191A6]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF6A58B4497+33959]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF6A58B7F65+49013]
+	Microsoft::Applications::Events::ILogManager::DispatchEventBroadcast [0x00007FF6A5BA9933+1305299]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF6A596AE1C+781868]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF6A5970344+803668]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF6A597049C+804012]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF6A59785A1+837041]
+	BaseThreadInitThunk [0x00007FF995B07614+20]
+	RtlUserThreadStart [0x00007FF996C826A1+33]
+
+	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
+	at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
+	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:1002)
+	at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:129)
+	at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:527)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:513)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:647)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:141)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:96)
+	at browserSetup.Base.openEdgeBrowser(Base.java:19)
+	at testNgpack.VerifySignUpPage.openBrowser(VerifySignUpPage.java:43)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 20 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1272403428", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1272403428'><pre>org.openqa.selenium.WebDriverException: disconnected: received Inspector.detached event
+  (failed to check if window was closed: disconnected: not connected to DevTools)
+  (Session info: MicrosoftEdge=111.0.1661.62)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-ADC0TJP&apos;, ip: &apos;172.17.48.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.5&apos;
+Driver info: driver.version: EdgeDriver
+remote stacktrace: Backtrace:
+	Microsoft::Applications::Events::EventProperties::SetProperty [0x00007FF6A59CA5C2+12658]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF6A5962862+747634]
+	(No symbol) [0x00007FF6A55FDD2E]
+	(No symbol) [0x00007FF6A55EB70C]
+	(No symbol) [0x00007FF6A55EAC38]
+	(No symbol) [0x00007FF6A55E9DA4]
+	(No symbol) [0x00007FF6A55E9CBC]
+	(No symbol) [0x00007FF6A55E86D3]
+	(No symbol) [0x00007FF6A55E8E36]
+	(No symbol) [0x00007FF6A55E78E6]
+	(No symbol) [0x00007FF6A55F55CD]
+	(No symbol) [0x00007FF6A55E7692]
+	(No symbol) [0x00007FF6A55E98D8]
+	(No symbol) [0x00007FF6A55E86D3]
+	(No symbol) [0x00007FF6A55E8E36]
+	(No symbol) [0x00007FF6A55E78E6]
+	(No symbol) [0x00007FF6A55F23D4]
+	(No symbol) [0x00007FF6A55E7692]
+	(No symbol) [0x00007FF6A55E98D8]
+	(No symbol) [0x00007FF6A55E86D3]
+	(No symbol) [0x00007FF6A55E8E36]
+	(No symbol) [0x00007FF6A55E78E6]
+	(No symbol) [0x00007FF6A55EF7B1]
+	(No symbol) [0x00007FF6A55E7692]
+	(No symbol) [0x00007FF6A55E98D8]
+	(No symbol) [0x00007FF6A55E86D3]
+	(No symbol) [0x00007FF6A55E8E36]
+	(No symbol) [0x00007FF6A55E78E6]
+	(No symbol) [0x00007FF6A55DE45A]
+	(No symbol) [0x00007FF6A55E7692]
+	(No symbol) [0x00007FF6A55E6AA1]
+	(No symbol) [0x00007FF6A55E675F]
+	(No symbol) [0x00007FF6A55FF44B]
+	(No symbol) [0x00007FF6A55D6EA7]
+	(No symbol) [0x00007FF6A55D5DF3]
+	(No symbol) [0x00007FF6A5667316]
+	(No symbol) [0x00007FF6A565F1C3]
+	(No symbol) [0x00007FF6A56317D6]
+	(No symbol) [0x00007FF6A56309B5]
+	(No symbol) [0x00007FF6A5631F44]
+	Microsoft::Applications::Events::EventProperties::SetProperty [0x00007FF6A5875530+147088]
+	(No symbol) [0x00007FF6A57191A6]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF6A58B4497+33959]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF6A58B7F65+49013]
+	Microsoft::Applications::Events::ILogManager::DispatchEventBroadcast [0x00007FF6A5BA9933+1305299]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF6A596AE1C+781868]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF6A5970344+803668]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF6A597049C+804012]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF6A59785A1+837041]
+	BaseThreadInitThunk [0x00007FF995B07614+20]
+	RtlUserThreadStart [0x00007FF996C826A1+33]
+
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
+	at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
+	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:1002)
+	at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:129)
+	at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:527)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:513)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:647)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:141)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:96)
+	at browserSetup.Base.openEdgeBrowser(Base.java:19)
+	at testNgpack.VerifySignUpPage.openBrowser(VerifySignUpPage.java:43)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+	at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:637)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:627)
+	at org.testng.TestRunner.run(TestRunner.java:589)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+</pre></div></td>
+<td>0</td>
+<td>testNgpack.VerifyLoginButton@59fd97a8</td></tr>
+<tr>
+<td title='testNgpack.VerifySignUpPage.verifySignUpButtonOnSignUpPage()'><b>verifySignUpButtonOnSignUpPage</b><br>Test class: testNgpack.VerifySignUpPage</td>
+<td><div><pre>org.openqa.selenium.WebDriverException: disconnected: received Inspector.detached event
+  (failed to check if window was closed: disconnected: not connected to DevTools)
+  (Session info: MicrosoftEdge=111.0.1661.62)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-ADC0TJP&apos;, ip: &apos;172.17.48.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.5&apos;
+Driver info: driver.version: EdgeDriver
+remote stacktrace: Backtrace:
+	Microsoft::Applications::Events::EventProperties::SetProperty [0x00007FF6A59CA5C2+12658]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF6A5962862+747634]
+	(No symbol) [0x00007FF6A55FDD2E]
+	(No symbol) [0x00007FF6A55EB70C]
+	(No symbol) [0x00007FF6A55EAC38]
+	(No symbol) [0x00007FF6A55E9DA4]
+	(No symbol) [0x00007FF6A55E9CBC]
+	(No symbol) [0x00007FF6A55E86D3]
+	(No symbol) [0x00007FF6A55E8E36]
+	(No symbol) [0x00007FF6A55E78E6]
+	(No symbol) [0x00007FF6A55F55CD]
+	(No symbol) [0x00007FF6A55E7692]
+	(No symbol) [0x00007FF6A55E98D8]
+	(No symbol) [0x00007FF6A55E86D3]
+	(No symbol) [0x00007FF6A55E8E36]
+	(No symbol) [0x00007FF6A55E78E6]
+	(No symbol) [0x00007FF6A55F23D4]
+	(No symbol) [0x00007FF6A55E7692]
+	(No symbol) [0x00007FF6A55E98D8]
+	(No symbol) [0x00007FF6A55E86D3]
+	(No symbol) [0x00007FF6A55E8E36]
+	(No symbol) [0x00007FF6A55E78E6]
+	(No symbol) [0x00007FF6A55EF7B1]
+	(No symbol) [0x00007FF6A55E7692]
+	(No symbol) [0x00007FF6A55E98D8]
+	(No symbol) [0x00007FF6A55E86D3]
+	(No symbol) [0x00007FF6A55E8E36]
+	(No symbol) [0x00007FF6A55E78E6]
+	(No symbol) [0x00007FF6A55DE45A]
+	(No symbol) [0x00007FF6A55E7692]
+	(No symbol) [0x00007FF6A55E6AA1]
+	(No symbol) [0x00007FF6A55E675F]
+	(No symbol) [0x00007FF6A55FF44B]
+	(No symbol) [0x00007FF6A55D6EA7]
+	(No symbol) [0x00007FF6A55D5DF3]
+	(No symbol) [0x00007FF6A5667316]
+	(No symbol) [0x00007FF6A565F1C3]
+	(No symbol) [0x00007FF6A56317D6]
+	(No symbol) [0x00007FF6A56309B5]
+	(No symbol) [0x00007FF6A5631F44]
+	Microsoft::Applications::Events::EventProperties::SetProperty [0x00007FF6A5875530+147088]
+	(No symbol) [0x00007FF6A57191A6]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF6A58B4497+33959]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF6A58B7F65+49013]
+	Microsoft::Applications::Events::ILogManager::DispatchEventBroadcast [0x00007FF6A5BA9933+1305299]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF6A596AE1C+781868]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF6A5970344+803668]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF6A597049C+804012]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF6A59785A1+837041]
+	BaseThreadInitThunk [0x00007FF995B07614+20]
+	RtlUserThreadStart [0x00007FF996C826A1+33]
+
+	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
+	at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
+	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:1002)
+	at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:129)
+	at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:527)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:513)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:647)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:141)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:96)
+	at browserSetup.Base.openEdgeBrowser(Base.java:19)
+	at testNgpack.VerifySignUpPage.openBrowser(VerifySignUpPage.java:43)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 20 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace761664129", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace761664129'><pre>org.openqa.selenium.WebDriverException: disconnected: received Inspector.detached event
+  (failed to check if window was closed: disconnected: not connected to DevTools)
+  (Session info: MicrosoftEdge=111.0.1661.62)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-ADC0TJP&apos;, ip: &apos;172.17.48.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.5&apos;
+Driver info: driver.version: EdgeDriver
+remote stacktrace: Backtrace:
+	Microsoft::Applications::Events::EventProperties::SetProperty [0x00007FF6A59CA5C2+12658]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF6A5962862+747634]
+	(No symbol) [0x00007FF6A55FDD2E]
+	(No symbol) [0x00007FF6A55EB70C]
+	(No symbol) [0x00007FF6A55EAC38]
+	(No symbol) [0x00007FF6A55E9DA4]
+	(No symbol) [0x00007FF6A55E9CBC]
+	(No symbol) [0x00007FF6A55E86D3]
+	(No symbol) [0x00007FF6A55E8E36]
+	(No symbol) [0x00007FF6A55E78E6]
+	(No symbol) [0x00007FF6A55F55CD]
+	(No symbol) [0x00007FF6A55E7692]
+	(No symbol) [0x00007FF6A55E98D8]
+	(No symbol) [0x00007FF6A55E86D3]
+	(No symbol) [0x00007FF6A55E8E36]
+	(No symbol) [0x00007FF6A55E78E6]
+	(No symbol) [0x00007FF6A55F23D4]
+	(No symbol) [0x00007FF6A55E7692]
+	(No symbol) [0x00007FF6A55E98D8]
+	(No symbol) [0x00007FF6A55E86D3]
+	(No symbol) [0x00007FF6A55E8E36]
+	(No symbol) [0x00007FF6A55E78E6]
+	(No symbol) [0x00007FF6A55EF7B1]
+	(No symbol) [0x00007FF6A55E7692]
+	(No symbol) [0x00007FF6A55E98D8]
+	(No symbol) [0x00007FF6A55E86D3]
+	(No symbol) [0x00007FF6A55E8E36]
+	(No symbol) [0x00007FF6A55E78E6]
+	(No symbol) [0x00007FF6A55DE45A]
+	(No symbol) [0x00007FF6A55E7692]
+	(No symbol) [0x00007FF6A55E6AA1]
+	(No symbol) [0x00007FF6A55E675F]
+	(No symbol) [0x00007FF6A55FF44B]
+	(No symbol) [0x00007FF6A55D6EA7]
+	(No symbol) [0x00007FF6A55D5DF3]
+	(No symbol) [0x00007FF6A5667316]
+	(No symbol) [0x00007FF6A565F1C3]
+	(No symbol) [0x00007FF6A56317D6]
+	(No symbol) [0x00007FF6A56309B5]
+	(No symbol) [0x00007FF6A5631F44]
+	Microsoft::Applications::Events::EventProperties::SetProperty [0x00007FF6A5875530+147088]
+	(No symbol) [0x00007FF6A57191A6]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF6A58B4497+33959]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF6A58B7F65+49013]
+	Microsoft::Applications::Events::ILogManager::DispatchEventBroadcast [0x00007FF6A5BA9933+1305299]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF6A596AE1C+781868]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF6A5970344+803668]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF6A597049C+804012]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF6A59785A1+837041]
+	BaseThreadInitThunk [0x00007FF995B07614+20]
+	RtlUserThreadStart [0x00007FF996C826A1+33]
+
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
+	at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
+	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:1002)
+	at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:129)
+	at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:527)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:513)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:647)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:141)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:96)
+	at browserSetup.Base.openEdgeBrowser(Base.java:19)
+	at testNgpack.VerifySignUpPage.openBrowser(VerifySignUpPage.java:43)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+	at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:637)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:627)
+	at org.testng.TestRunner.run(TestRunner.java:589)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+</pre></div></td>
+<td>0</td>
+<td>testNgpack.VerifySignUpPage@123ef382</td></tr>
+<tr>
+<td title='testNgpack.VerifyLoginButton.clickOnLoginButton()'><b>clickOnLoginButton</b><br>Test class: testNgpack.VerifyLoginButton</td>
+<td><div><pre>org.openqa.selenium.WebDriverException: disconnected: received Inspector.detached event
+  (failed to check if window was closed: disconnected: not connected to DevTools)
+  (Session info: MicrosoftEdge=111.0.1661.62)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-ADC0TJP&apos;, ip: &apos;172.17.48.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.5&apos;
+Driver info: driver.version: EdgeDriver
+remote stacktrace: Backtrace:
+	Microsoft::Applications::Events::EventProperties::SetProperty [0x00007FF6A59CA5C2+12658]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF6A5962862+747634]
+	(No symbol) [0x00007FF6A55FDD2E]
+	(No symbol) [0x00007FF6A55EB70C]
+	(No symbol) [0x00007FF6A55EAC38]
+	(No symbol) [0x00007FF6A55E9DA4]
+	(No symbol) [0x00007FF6A55E9CBC]
+	(No symbol) [0x00007FF6A55E86D3]
+	(No symbol) [0x00007FF6A55E8E36]
+	(No symbol) [0x00007FF6A55E78E6]
+	(No symbol) [0x00007FF6A55F55CD]
+	(No symbol) [0x00007FF6A55E7692]
+	(No symbol) [0x00007FF6A55E98D8]
+	(No symbol) [0x00007FF6A55E86D3]
+	(No symbol) [0x00007FF6A55E8E36]
+	(No symbol) [0x00007FF6A55E78E6]
+	(No symbol) [0x00007FF6A55F23D4]
+	(No symbol) [0x00007FF6A55E7692]
+	(No symbol) [0x00007FF6A55E98D8]
+	(No symbol) [0x00007FF6A55E86D3]
+	(No symbol) [0x00007FF6A55E8E36]
+	(No symbol) [0x00007FF6A55E78E6]
+	(No symbol) [0x00007FF6A55EF7B1]
+	(No symbol) [0x00007FF6A55E7692]
+	(No symbol) [0x00007FF6A55E98D8]
+	(No symbol) [0x00007FF6A55E86D3]
+	(No symbol) [0x00007FF6A55E8E36]
+	(No symbol) [0x00007FF6A55E78E6]
+	(No symbol) [0x00007FF6A55DE45A]
+	(No symbol) [0x00007FF6A55E7692]
+	(No symbol) [0x00007FF6A55E6AA1]
+	(No symbol) [0x00007FF6A55E675F]
+	(No symbol) [0x00007FF6A55FF44B]
+	(No symbol) [0x00007FF6A55D6EA7]
+	(No symbol) [0x00007FF6A55D5DF3]
+	(No symbol) [0x00007FF6A5667316]
+	(No symbol) [0x00007FF6A565F1C3]
+	(No symbol) [0x00007FF6A56317D6]
+	(No symbol) [0x00007FF6A56309B5]
+	(No symbol) [0x00007FF6A5631F44]
+	Microsoft::Applications::Events::EventProperties::SetProperty [0x00007FF6A5875530+147088]
+	(No symbol) [0x00007FF6A57191A6]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF6A58B4497+33959]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF6A58B7F65+49013]
+	Microsoft::Applications::Events::ILogManager::DispatchEventBroadcast [0x00007FF6A5BA9933+1305299]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF6A596AE1C+781868]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF6A5970344+803668]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF6A597049C+804012]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF6A59785A1+837041]
+	BaseThreadInitThunk [0x00007FF995B07614+20]
+	RtlUserThreadStart [0x00007FF996C826A1+33]
+
+	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
+	at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
+	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:1002)
+	at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:129)
+	at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:527)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:513)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:647)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:141)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:96)
+	at browserSetup.Base.openEdgeBrowser(Base.java:19)
+	at testNgpack.VerifySignUpPage.openBrowser(VerifySignUpPage.java:43)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 20 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace781496748", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace781496748'><pre>org.openqa.selenium.WebDriverException: disconnected: received Inspector.detached event
+  (failed to check if window was closed: disconnected: not connected to DevTools)
+  (Session info: MicrosoftEdge=111.0.1661.62)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-ADC0TJP&apos;, ip: &apos;172.17.48.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.5&apos;
+Driver info: driver.version: EdgeDriver
+remote stacktrace: Backtrace:
+	Microsoft::Applications::Events::EventProperties::SetProperty [0x00007FF6A59CA5C2+12658]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF6A5962862+747634]
+	(No symbol) [0x00007FF6A55FDD2E]
+	(No symbol) [0x00007FF6A55EB70C]
+	(No symbol) [0x00007FF6A55EAC38]
+	(No symbol) [0x00007FF6A55E9DA4]
+	(No symbol) [0x00007FF6A55E9CBC]
+	(No symbol) [0x00007FF6A55E86D3]
+	(No symbol) [0x00007FF6A55E8E36]
+	(No symbol) [0x00007FF6A55E78E6]
+	(No symbol) [0x00007FF6A55F55CD]
+	(No symbol) [0x00007FF6A55E7692]
+	(No symbol) [0x00007FF6A55E98D8]
+	(No symbol) [0x00007FF6A55E86D3]
+	(No symbol) [0x00007FF6A55E8E36]
+	(No symbol) [0x00007FF6A55E78E6]
+	(No symbol) [0x00007FF6A55F23D4]
+	(No symbol) [0x00007FF6A55E7692]
+	(No symbol) [0x00007FF6A55E98D8]
+	(No symbol) [0x00007FF6A55E86D3]
+	(No symbol) [0x00007FF6A55E8E36]
+	(No symbol) [0x00007FF6A55E78E6]
+	(No symbol) [0x00007FF6A55EF7B1]
+	(No symbol) [0x00007FF6A55E7692]
+	(No symbol) [0x00007FF6A55E98D8]
+	(No symbol) [0x00007FF6A55E86D3]
+	(No symbol) [0x00007FF6A55E8E36]
+	(No symbol) [0x00007FF6A55E78E6]
+	(No symbol) [0x00007FF6A55DE45A]
+	(No symbol) [0x00007FF6A55E7692]
+	(No symbol) [0x00007FF6A55E6AA1]
+	(No symbol) [0x00007FF6A55E675F]
+	(No symbol) [0x00007FF6A55FF44B]
+	(No symbol) [0x00007FF6A55D6EA7]
+	(No symbol) [0x00007FF6A55D5DF3]
+	(No symbol) [0x00007FF6A5667316]
+	(No symbol) [0x00007FF6A565F1C3]
+	(No symbol) [0x00007FF6A56317D6]
+	(No symbol) [0x00007FF6A56309B5]
+	(No symbol) [0x00007FF6A5631F44]
+	Microsoft::Applications::Events::EventProperties::SetProperty [0x00007FF6A5875530+147088]
+	(No symbol) [0x00007FF6A57191A6]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF6A58B4497+33959]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF6A58B7F65+49013]
+	Microsoft::Applications::Events::ILogManager::DispatchEventBroadcast [0x00007FF6A5BA9933+1305299]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF6A596AE1C+781868]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF6A5970344+803668]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF6A597049C+804012]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF6A59785A1+837041]
+	BaseThreadInitThunk [0x00007FF995B07614+20]
+	RtlUserThreadStart [0x00007FF996C826A1+33]
+
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
+	at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
+	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:1002)
+	at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:129)
+	at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:527)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:513)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:647)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:141)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:96)
+	at browserSetup.Base.openEdgeBrowser(Base.java:19)
+	at testNgpack.VerifySignUpPage.openBrowser(VerifySignUpPage.java:43)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+	at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:637)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:627)
+	at org.testng.TestRunner.run(TestRunner.java:589)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+</pre></div></td>
+<td>0</td>
+<td>testNgpack.VerifyLoginButton@59fd97a8</td></tr>
+<tr>
+<td title='testNgpack.VerifyForgotPasswordPage.verifyTheTextPresentOnForgotPasswordPage()'><b>verifyTheTextPresentOnForgotPasswordPage</b><br>Test class: testNgpack.VerifyForgotPasswordPage</td>
+<td><div><pre>org.openqa.selenium.WebDriverException: disconnected: received Inspector.detached event
+  (failed to check if window was closed: disconnected: not connected to DevTools)
+  (Session info: MicrosoftEdge=111.0.1661.62)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-ADC0TJP&apos;, ip: &apos;172.17.48.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.5&apos;
+Driver info: driver.version: EdgeDriver
+remote stacktrace: Backtrace:
+	Microsoft::Applications::Events::EventProperties::SetProperty [0x00007FF6A59CA5C2+12658]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF6A5962862+747634]
+	(No symbol) [0x00007FF6A55FDD2E]
+	(No symbol) [0x00007FF6A55EB70C]
+	(No symbol) [0x00007FF6A55EAC38]
+	(No symbol) [0x00007FF6A55E9DA4]
+	(No symbol) [0x00007FF6A55E9CBC]
+	(No symbol) [0x00007FF6A55E86D3]
+	(No symbol) [0x00007FF6A55E8E36]
+	(No symbol) [0x00007FF6A55E78E6]
+	(No symbol) [0x00007FF6A55F55CD]
+	(No symbol) [0x00007FF6A55E7692]
+	(No symbol) [0x00007FF6A55E98D8]
+	(No symbol) [0x00007FF6A55E86D3]
+	(No symbol) [0x00007FF6A55E8E36]
+	(No symbol) [0x00007FF6A55E78E6]
+	(No symbol) [0x00007FF6A55F23D4]
+	(No symbol) [0x00007FF6A55E7692]
+	(No symbol) [0x00007FF6A55E98D8]
+	(No symbol) [0x00007FF6A55E86D3]
+	(No symbol) [0x00007FF6A55E8E36]
+	(No symbol) [0x00007FF6A55E78E6]
+	(No symbol) [0x00007FF6A55EF7B1]
+	(No symbol) [0x00007FF6A55E7692]
+	(No symbol) [0x00007FF6A55E98D8]
+	(No symbol) [0x00007FF6A55E86D3]
+	(No symbol) [0x00007FF6A55E8E36]
+	(No symbol) [0x00007FF6A55E78E6]
+	(No symbol) [0x00007FF6A55DE45A]
+	(No symbol) [0x00007FF6A55E7692]
+	(No symbol) [0x00007FF6A55E6AA1]
+	(No symbol) [0x00007FF6A55E675F]
+	(No symbol) [0x00007FF6A55FF44B]
+	(No symbol) [0x00007FF6A55D6EA7]
+	(No symbol) [0x00007FF6A55D5DF3]
+	(No symbol) [0x00007FF6A5667316]
+	(No symbol) [0x00007FF6A565F1C3]
+	(No symbol) [0x00007FF6A56317D6]
+	(No symbol) [0x00007FF6A56309B5]
+	(No symbol) [0x00007FF6A5631F44]
+	Microsoft::Applications::Events::EventProperties::SetProperty [0x00007FF6A5875530+147088]
+	(No symbol) [0x00007FF6A57191A6]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF6A58B4497+33959]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF6A58B7F65+49013]
+	Microsoft::Applications::Events::ILogManager::DispatchEventBroadcast [0x00007FF6A5BA9933+1305299]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF6A596AE1C+781868]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF6A5970344+803668]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF6A597049C+804012]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF6A59785A1+837041]
+	BaseThreadInitThunk [0x00007FF995B07614+20]
+	RtlUserThreadStart [0x00007FF996C826A1+33]
+
+	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
+	at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
+	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:1002)
+	at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:129)
+	at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:527)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:513)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:647)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:141)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:96)
+	at browserSetup.Base.openEdgeBrowser(Base.java:19)
+	at testNgpack.VerifySignUpPage.openBrowser(VerifySignUpPage.java:43)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 20 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1596749205", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1596749205'><pre>org.openqa.selenium.WebDriverException: disconnected: received Inspector.detached event
+  (failed to check if window was closed: disconnected: not connected to DevTools)
+  (Session info: MicrosoftEdge=111.0.1661.62)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-ADC0TJP&apos;, ip: &apos;172.17.48.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.5&apos;
+Driver info: driver.version: EdgeDriver
+remote stacktrace: Backtrace:
+	Microsoft::Applications::Events::EventProperties::SetProperty [0x00007FF6A59CA5C2+12658]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF6A5962862+747634]
+	(No symbol) [0x00007FF6A55FDD2E]
+	(No symbol) [0x00007FF6A55EB70C]
+	(No symbol) [0x00007FF6A55EAC38]
+	(No symbol) [0x00007FF6A55E9DA4]
+	(No symbol) [0x00007FF6A55E9CBC]
+	(No symbol) [0x00007FF6A55E86D3]
+	(No symbol) [0x00007FF6A55E8E36]
+	(No symbol) [0x00007FF6A55E78E6]
+	(No symbol) [0x00007FF6A55F55CD]
+	(No symbol) [0x00007FF6A55E7692]
+	(No symbol) [0x00007FF6A55E98D8]
+	(No symbol) [0x00007FF6A55E86D3]
+	(No symbol) [0x00007FF6A55E8E36]
+	(No symbol) [0x00007FF6A55E78E6]
+	(No symbol) [0x00007FF6A55F23D4]
+	(No symbol) [0x00007FF6A55E7692]
+	(No symbol) [0x00007FF6A55E98D8]
+	(No symbol) [0x00007FF6A55E86D3]
+	(No symbol) [0x00007FF6A55E8E36]
+	(No symbol) [0x00007FF6A55E78E6]
+	(No symbol) [0x00007FF6A55EF7B1]
+	(No symbol) [0x00007FF6A55E7692]
+	(No symbol) [0x00007FF6A55E98D8]
+	(No symbol) [0x00007FF6A55E86D3]
+	(No symbol) [0x00007FF6A55E8E36]
+	(No symbol) [0x00007FF6A55E78E6]
+	(No symbol) [0x00007FF6A55DE45A]
+	(No symbol) [0x00007FF6A55E7692]
+	(No symbol) [0x00007FF6A55E6AA1]
+	(No symbol) [0x00007FF6A55E675F]
+	(No symbol) [0x00007FF6A55FF44B]
+	(No symbol) [0x00007FF6A55D6EA7]
+	(No symbol) [0x00007FF6A55D5DF3]
+	(No symbol) [0x00007FF6A5667316]
+	(No symbol) [0x00007FF6A565F1C3]
+	(No symbol) [0x00007FF6A56317D6]
+	(No symbol) [0x00007FF6A56309B5]
+	(No symbol) [0x00007FF6A5631F44]
+	Microsoft::Applications::Events::EventProperties::SetProperty [0x00007FF6A5875530+147088]
+	(No symbol) [0x00007FF6A57191A6]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF6A58B4497+33959]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF6A58B7F65+49013]
+	Microsoft::Applications::Events::ILogManager::DispatchEventBroadcast [0x00007FF6A5BA9933+1305299]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF6A596AE1C+781868]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF6A5970344+803668]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF6A597049C+804012]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF6A59785A1+837041]
+	BaseThreadInitThunk [0x00007FF995B07614+20]
+	RtlUserThreadStart [0x00007FF996C826A1+33]
+
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
+	at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
+	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:1002)
+	at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:129)
+	at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:527)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:513)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:647)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:141)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:96)
+	at browserSetup.Base.openEdgeBrowser(Base.java:19)
+	at testNgpack.VerifySignUpPage.openBrowser(VerifySignUpPage.java:43)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+	at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:637)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:627)
+	at org.testng.TestRunner.run(TestRunner.java:589)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+</pre></div></td>
+<td>0</td>
+<td>testNgpack.VerifyForgotPasswordPage@f5ac9e4</td></tr>
+<tr>
+<td title='testNgpack.VerifyForgotPasswordPage.verifyCancelButtonOfForgotPasswordPage()'><b>verifyCancelButtonOfForgotPasswordPage</b><br>Test class: testNgpack.VerifyForgotPasswordPage</td>
+<td><div><pre>org.openqa.selenium.WebDriverException: disconnected: received Inspector.detached event
+  (failed to check if window was closed: disconnected: not connected to DevTools)
+  (Session info: MicrosoftEdge=111.0.1661.62)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-ADC0TJP&apos;, ip: &apos;172.17.48.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.5&apos;
+Driver info: driver.version: EdgeDriver
+remote stacktrace: Backtrace:
+	Microsoft::Applications::Events::EventProperties::SetProperty [0x00007FF6A59CA5C2+12658]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF6A5962862+747634]
+	(No symbol) [0x00007FF6A55FDD2E]
+	(No symbol) [0x00007FF6A55EB70C]
+	(No symbol) [0x00007FF6A55EAC38]
+	(No symbol) [0x00007FF6A55E9DA4]
+	(No symbol) [0x00007FF6A55E9CBC]
+	(No symbol) [0x00007FF6A55E86D3]
+	(No symbol) [0x00007FF6A55E8E36]
+	(No symbol) [0x00007FF6A55E78E6]
+	(No symbol) [0x00007FF6A55F55CD]
+	(No symbol) [0x00007FF6A55E7692]
+	(No symbol) [0x00007FF6A55E98D8]
+	(No symbol) [0x00007FF6A55E86D3]
+	(No symbol) [0x00007FF6A55E8E36]
+	(No symbol) [0x00007FF6A55E78E6]
+	(No symbol) [0x00007FF6A55F23D4]
+	(No symbol) [0x00007FF6A55E7692]
+	(No symbol) [0x00007FF6A55E98D8]
+	(No symbol) [0x00007FF6A55E86D3]
+	(No symbol) [0x00007FF6A55E8E36]
+	(No symbol) [0x00007FF6A55E78E6]
+	(No symbol) [0x00007FF6A55EF7B1]
+	(No symbol) [0x00007FF6A55E7692]
+	(No symbol) [0x00007FF6A55E98D8]
+	(No symbol) [0x00007FF6A55E86D3]
+	(No symbol) [0x00007FF6A55E8E36]
+	(No symbol) [0x00007FF6A55E78E6]
+	(No symbol) [0x00007FF6A55DE45A]
+	(No symbol) [0x00007FF6A55E7692]
+	(No symbol) [0x00007FF6A55E6AA1]
+	(No symbol) [0x00007FF6A55E675F]
+	(No symbol) [0x00007FF6A55FF44B]
+	(No symbol) [0x00007FF6A55D6EA7]
+	(No symbol) [0x00007FF6A55D5DF3]
+	(No symbol) [0x00007FF6A5667316]
+	(No symbol) [0x00007FF6A565F1C3]
+	(No symbol) [0x00007FF6A56317D6]
+	(No symbol) [0x00007FF6A56309B5]
+	(No symbol) [0x00007FF6A5631F44]
+	Microsoft::Applications::Events::EventProperties::SetProperty [0x00007FF6A5875530+147088]
+	(No symbol) [0x00007FF6A57191A6]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF6A58B4497+33959]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF6A58B7F65+49013]
+	Microsoft::Applications::Events::ILogManager::DispatchEventBroadcast [0x00007FF6A5BA9933+1305299]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF6A596AE1C+781868]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF6A5970344+803668]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF6A597049C+804012]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF6A59785A1+837041]
+	BaseThreadInitThunk [0x00007FF995B07614+20]
+	RtlUserThreadStart [0x00007FF996C826A1+33]
+
+	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
+	at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
+	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:1002)
+	at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:129)
+	at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:527)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:513)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:647)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:141)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:96)
+	at browserSetup.Base.openEdgeBrowser(Base.java:19)
+	at testNgpack.VerifySignUpPage.openBrowser(VerifySignUpPage.java:43)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 20 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1011297677", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1011297677'><pre>org.openqa.selenium.WebDriverException: disconnected: received Inspector.detached event
+  (failed to check if window was closed: disconnected: not connected to DevTools)
+  (Session info: MicrosoftEdge=111.0.1661.62)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-ADC0TJP&apos;, ip: &apos;172.17.48.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.5&apos;
+Driver info: driver.version: EdgeDriver
+remote stacktrace: Backtrace:
+	Microsoft::Applications::Events::EventProperties::SetProperty [0x00007FF6A59CA5C2+12658]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF6A5962862+747634]
+	(No symbol) [0x00007FF6A55FDD2E]
+	(No symbol) [0x00007FF6A55EB70C]
+	(No symbol) [0x00007FF6A55EAC38]
+	(No symbol) [0x00007FF6A55E9DA4]
+	(No symbol) [0x00007FF6A55E9CBC]
+	(No symbol) [0x00007FF6A55E86D3]
+	(No symbol) [0x00007FF6A55E8E36]
+	(No symbol) [0x00007FF6A55E78E6]
+	(No symbol) [0x00007FF6A55F55CD]
+	(No symbol) [0x00007FF6A55E7692]
+	(No symbol) [0x00007FF6A55E98D8]
+	(No symbol) [0x00007FF6A55E86D3]
+	(No symbol) [0x00007FF6A55E8E36]
+	(No symbol) [0x00007FF6A55E78E6]
+	(No symbol) [0x00007FF6A55F23D4]
+	(No symbol) [0x00007FF6A55E7692]
+	(No symbol) [0x00007FF6A55E98D8]
+	(No symbol) [0x00007FF6A55E86D3]
+	(No symbol) [0x00007FF6A55E8E36]
+	(No symbol) [0x00007FF6A55E78E6]
+	(No symbol) [0x00007FF6A55EF7B1]
+	(No symbol) [0x00007FF6A55E7692]
+	(No symbol) [0x00007FF6A55E98D8]
+	(No symbol) [0x00007FF6A55E86D3]
+	(No symbol) [0x00007FF6A55E8E36]
+	(No symbol) [0x00007FF6A55E78E6]
+	(No symbol) [0x00007FF6A55DE45A]
+	(No symbol) [0x00007FF6A55E7692]
+	(No symbol) [0x00007FF6A55E6AA1]
+	(No symbol) [0x00007FF6A55E675F]
+	(No symbol) [0x00007FF6A55FF44B]
+	(No symbol) [0x00007FF6A55D6EA7]
+	(No symbol) [0x00007FF6A55D5DF3]
+	(No symbol) [0x00007FF6A5667316]
+	(No symbol) [0x00007FF6A565F1C3]
+	(No symbol) [0x00007FF6A56317D6]
+	(No symbol) [0x00007FF6A56309B5]
+	(No symbol) [0x00007FF6A5631F44]
+	Microsoft::Applications::Events::EventProperties::SetProperty [0x00007FF6A5875530+147088]
+	(No symbol) [0x00007FF6A57191A6]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF6A58B4497+33959]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF6A58B7F65+49013]
+	Microsoft::Applications::Events::ILogManager::DispatchEventBroadcast [0x00007FF6A5BA9933+1305299]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF6A596AE1C+781868]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF6A5970344+803668]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF6A597049C+804012]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF6A59785A1+837041]
+	BaseThreadInitThunk [0x00007FF995B07614+20]
+	RtlUserThreadStart [0x00007FF996C826A1+33]
+
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
+	at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
+	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:1002)
+	at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:129)
+	at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:527)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:513)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:647)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:141)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:96)
+	at browserSetup.Base.openEdgeBrowser(Base.java:19)
+	at testNgpack.VerifySignUpPage.openBrowser(VerifySignUpPage.java:43)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+	at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:637)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:627)
+	at org.testng.TestRunner.run(TestRunner.java:589)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+</pre></div></td>
+<td>0</td>
+<td>testNgpack.VerifyForgotPasswordPage@f5ac9e4</td></tr>
+<tr>
+<td title='testNgpack.VerifyForgotPasswordPage.verifySearchButtonOnForgotPasswordPage()'><b>verifySearchButtonOnForgotPasswordPage</b><br>Test class: testNgpack.VerifyForgotPasswordPage</td>
+<td><div><pre>org.openqa.selenium.WebDriverException: disconnected: received Inspector.detached event
+  (failed to check if window was closed: disconnected: not connected to DevTools)
+  (Session info: MicrosoftEdge=111.0.1661.62)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-ADC0TJP&apos;, ip: &apos;172.17.48.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.5&apos;
+Driver info: driver.version: EdgeDriver
+remote stacktrace: Backtrace:
+	Microsoft::Applications::Events::EventProperties::SetProperty [0x00007FF6A59CA5C2+12658]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF6A5962862+747634]
+	(No symbol) [0x00007FF6A55FDD2E]
+	(No symbol) [0x00007FF6A55EB70C]
+	(No symbol) [0x00007FF6A55EAC38]
+	(No symbol) [0x00007FF6A55E9DA4]
+	(No symbol) [0x00007FF6A55E9CBC]
+	(No symbol) [0x00007FF6A55E86D3]
+	(No symbol) [0x00007FF6A55E8E36]
+	(No symbol) [0x00007FF6A55E78E6]
+	(No symbol) [0x00007FF6A55F55CD]
+	(No symbol) [0x00007FF6A55E7692]
+	(No symbol) [0x00007FF6A55E98D8]
+	(No symbol) [0x00007FF6A55E86D3]
+	(No symbol) [0x00007FF6A55E8E36]
+	(No symbol) [0x00007FF6A55E78E6]
+	(No symbol) [0x00007FF6A55F23D4]
+	(No symbol) [0x00007FF6A55E7692]
+	(No symbol) [0x00007FF6A55E98D8]
+	(No symbol) [0x00007FF6A55E86D3]
+	(No symbol) [0x00007FF6A55E8E36]
+	(No symbol) [0x00007FF6A55E78E6]
+	(No symbol) [0x00007FF6A55EF7B1]
+	(No symbol) [0x00007FF6A55E7692]
+	(No symbol) [0x00007FF6A55E98D8]
+	(No symbol) [0x00007FF6A55E86D3]
+	(No symbol) [0x00007FF6A55E8E36]
+	(No symbol) [0x00007FF6A55E78E6]
+	(No symbol) [0x00007FF6A55DE45A]
+	(No symbol) [0x00007FF6A55E7692]
+	(No symbol) [0x00007FF6A55E6AA1]
+	(No symbol) [0x00007FF6A55E675F]
+	(No symbol) [0x00007FF6A55FF44B]
+	(No symbol) [0x00007FF6A55D6EA7]
+	(No symbol) [0x00007FF6A55D5DF3]
+	(No symbol) [0x00007FF6A5667316]
+	(No symbol) [0x00007FF6A565F1C3]
+	(No symbol) [0x00007FF6A56317D6]
+	(No symbol) [0x00007FF6A56309B5]
+	(No symbol) [0x00007FF6A5631F44]
+	Microsoft::Applications::Events::EventProperties::SetProperty [0x00007FF6A5875530+147088]
+	(No symbol) [0x00007FF6A57191A6]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF6A58B4497+33959]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF6A58B7F65+49013]
+	Microsoft::Applications::Events::ILogManager::DispatchEventBroadcast [0x00007FF6A5BA9933+1305299]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF6A596AE1C+781868]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF6A5970344+803668]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF6A597049C+804012]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF6A59785A1+837041]
+	BaseThreadInitThunk [0x00007FF995B07614+20]
+	RtlUserThreadStart [0x00007FF996C826A1+33]
+
+	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
+	at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
+	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:1002)
+	at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:129)
+	at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:527)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:513)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:647)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:141)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:96)
+	at browserSetup.Base.openEdgeBrowser(Base.java:19)
+	at testNgpack.VerifySignUpPage.openBrowser(VerifySignUpPage.java:43)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 20 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace798716613", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace798716613'><pre>org.openqa.selenium.WebDriverException: disconnected: received Inspector.detached event
+  (failed to check if window was closed: disconnected: not connected to DevTools)
+  (Session info: MicrosoftEdge=111.0.1661.62)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-ADC0TJP&apos;, ip: &apos;172.17.48.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.5&apos;
+Driver info: driver.version: EdgeDriver
+remote stacktrace: Backtrace:
+	Microsoft::Applications::Events::EventProperties::SetProperty [0x00007FF6A59CA5C2+12658]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF6A5962862+747634]
+	(No symbol) [0x00007FF6A55FDD2E]
+	(No symbol) [0x00007FF6A55EB70C]
+	(No symbol) [0x00007FF6A55EAC38]
+	(No symbol) [0x00007FF6A55E9DA4]
+	(No symbol) [0x00007FF6A55E9CBC]
+	(No symbol) [0x00007FF6A55E86D3]
+	(No symbol) [0x00007FF6A55E8E36]
+	(No symbol) [0x00007FF6A55E78E6]
+	(No symbol) [0x00007FF6A55F55CD]
+	(No symbol) [0x00007FF6A55E7692]
+	(No symbol) [0x00007FF6A55E98D8]
+	(No symbol) [0x00007FF6A55E86D3]
+	(No symbol) [0x00007FF6A55E8E36]
+	(No symbol) [0x00007FF6A55E78E6]
+	(No symbol) [0x00007FF6A55F23D4]
+	(No symbol) [0x00007FF6A55E7692]
+	(No symbol) [0x00007FF6A55E98D8]
+	(No symbol) [0x00007FF6A55E86D3]
+	(No symbol) [0x00007FF6A55E8E36]
+	(No symbol) [0x00007FF6A55E78E6]
+	(No symbol) [0x00007FF6A55EF7B1]
+	(No symbol) [0x00007FF6A55E7692]
+	(No symbol) [0x00007FF6A55E98D8]
+	(No symbol) [0x00007FF6A55E86D3]
+	(No symbol) [0x00007FF6A55E8E36]
+	(No symbol) [0x00007FF6A55E78E6]
+	(No symbol) [0x00007FF6A55DE45A]
+	(No symbol) [0x00007FF6A55E7692]
+	(No symbol) [0x00007FF6A55E6AA1]
+	(No symbol) [0x00007FF6A55E675F]
+	(No symbol) [0x00007FF6A55FF44B]
+	(No symbol) [0x00007FF6A55D6EA7]
+	(No symbol) [0x00007FF6A55D5DF3]
+	(No symbol) [0x00007FF6A5667316]
+	(No symbol) [0x00007FF6A565F1C3]
+	(No symbol) [0x00007FF6A56317D6]
+	(No symbol) [0x00007FF6A56309B5]
+	(No symbol) [0x00007FF6A5631F44]
+	Microsoft::Applications::Events::EventProperties::SetProperty [0x00007FF6A5875530+147088]
+	(No symbol) [0x00007FF6A57191A6]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF6A58B4497+33959]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF6A58B7F65+49013]
+	Microsoft::Applications::Events::ILogManager::DispatchEventBroadcast [0x00007FF6A5BA9933+1305299]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF6A596AE1C+781868]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF6A5970344+803668]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF6A597049C+804012]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF6A59785A1+837041]
+	BaseThreadInitThunk [0x00007FF995B07614+20]
+	RtlUserThreadStart [0x00007FF996C826A1+33]
+
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
+	at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
+	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:1002)
+	at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:129)
+	at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:527)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:513)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:647)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:141)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:96)
+	at browserSetup.Base.openEdgeBrowser(Base.java:19)
+	at testNgpack.VerifySignUpPage.openBrowser(VerifySignUpPage.java:43)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+	at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:637)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:627)
+	at org.testng.TestRunner.run(TestRunner.java:589)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+</pre></div></td>
+<td>0</td>
+<td>testNgpack.VerifyForgotPasswordPage@f5ac9e4</td></tr>
+</table><p>
+</body>
+</html>
